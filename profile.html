@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>静一下心 · 个人中心</title>
+<link rel="icon" href="assets/logo.png"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link rel="stylesheet" href="assets/styles.css"/>
+<script src="assets/nav.js"></script>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="assets/tailwind-setup.js"></script>
+</head>
+<body class="bg-background font-body-md text-body-md text-on-surface antialiased">
+<aside class="jy-sidebar fixed left-0 top-0 h-screen w-72 bg-surface-container-lowest/80 backdrop-blur-xl z-50 flex flex-col justify-between p-container-padding shadow-[0_1px_12px_rgba(28,107,80,0.05)]">
+  <div class="flex flex-col gap-stack-gap">
+    <div class="flex items-center gap-stack-gap px-card-inner-padding py-2">
+      <img alt="静一下心 品牌标志" class="h-8 w-auto object-contain" src="assets/logo.png"/>
+      <div class="flex flex-col"><span class="font-headline-md text-body-lg text-primary tracking-tight font-semibold">静一下心</span><span class="font-label-md text-label-md text-on-surface-variant opacity-80 text-[12px] leading-tight">科学缓解焦虑</span></div>
+    </div>
+    <div class="h-[1px] w-full bg-surface-container-high/60 my-1"></div>
+    <nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-full">
+      <a class="nav-link flex items-center gap-3 px-card-inner-padding py-3 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="overview" href="index.html"><span class="material-symbols-outlined text-[20px]">cottage</span><span class="font-label-md text-label-md">首页</span></a>
+      <a class="nav-link flex items-center gap-3 px-card-inner-padding py-3 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="toolbox" href="toolbox.html"><span class="material-symbols-outlined text-[20px]">self_improvement</span><span class="font-label-md text-label-md">疗愈工具箱</span></a>
+      <a class="nav-link flex items-center gap-3 px-card-inner-padding py-3 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="mood-and-insights" href="mood.html"><span class="material-symbols-outlined text-[20px]">auto_graph</span><span class="font-label-md text-label-md">情绪日志</span></a>
+      <a class="nav-link flex items-center gap-3 px-card-inner-padding py-3 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="science-basis" href="science.html"><span class="material-symbols-outlined text-[20px]">psychology</span><span class="font-label-md text-label-md">科学依据</span></a>
+      <a class="nav-link flex items-center gap-3 px-card-inner-padding py-3 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="knowledge" href="knowledge.html"><span class="material-symbols-outlined text-[20px]">menu_book</span><span class="font-label-md text-label-md">焦虑知识库</span></a>
+      <a class="nav-link flex items-center gap-3 px-card-inner-padding py-3 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="assessment" href="assessment.html"><span class="material-symbols-outlined text-[20px]">quiz</span><span class="font-label-md text-label-md">权威自测</span></a>
+      <a class="nav-link flex items-center gap-3 px-card-inner-padding py-3 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="safety" href="safety.html"><span class="material-symbols-outlined text-[20px]">support_agent</span><span class="font-label-md text-label-md">安全与帮助</span></a>
+    </nav>
+  </div>
+  <div class="flex flex-col gap-stack-gap">
+    <div class="h-[1px] w-full bg-surface-container-high/60"></div>
+    <nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-full">
+      <a class="nav-link flex items-center gap-3 px-card-inner-padding py-2.5 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="compliance-privacy" href="privacy.html"><span class="material-symbols-outlined text-[20px]">verified_user</span><span class="font-label-md text-label-md">隐私与合规</span></a>
+      <a class="nav-link flex items-center gap-3 px-card-inner-padding py-2.5 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="profile" href="profile.html"><span class="material-symbols-outlined text-[20px]">account_circle</span><span class="font-label-md text-label-md">个人中心</span></a>
+    </nav>
+    <div class="px-card-inner-padding py-2 flex items-center justify-between text-on-surface-variant/60 font-label-md text-[12px]"><span>心境平伏 呼吸自然</span><span class="material-symbols-outlined text-[16px] text-primary">spa</span></div>
+  </div>
+</aside>
+<div class="jy-main-wrap pl-72">
+<header class="jy-header fixed top-0 left-72 right-0 h-16 bg-surface/75 backdrop-blur-xl shadow-[0_1px_8px_rgba(28,107,80,0.03)] z-40 flex items-center justify-between px-section-gap">
+  <div class="flex items-center gap-stack-gap">
+    <a href="index.html" onclick="if(window.JY&amp;&amp;JY.goBack){JY.goBack(event);}else{location.href='index.html';}" class="group flex items-center justify-center w-9 h-9 -ml-2 mr-1 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-primary transition-all" aria-label="返回上一级" title="返回"><span class="material-symbols-outlined text-[22px]">arrow_back</span></a>
+    <img alt="静一下心 品牌标志" class="h-8 w-auto object-contain" src="assets/logo.png"/>
+    <span class="font-headline-md text-body-md text-on-surface font-medium hidden sm:inline">静一下心</span>
+  </div>
+  <div class="flex items-center gap-4">
+    <div class="flex items-center bg-surface-container-low px-4 py-1.5 rounded-full text-on-surface-variant"><span class="material-symbols-outlined text-[18px] text-primary mr-2">spa</span><span class="font-label-md text-label-md text-on-surface-variant">身心处于平缓状态</span></div>
+  </div>
+</header>
+<main class="w-full pt-16 bg-surface min-h-screen px-section-gap py-container-padding">
+  <div class="flex flex-col w-full">
+    <div class="mb-section-gap">
+      <h1 class="font-headline-lg text-headline-lg text-on-surface">个人中心</h1>
+      <p class="font-body-md text-body-md text-on-surface-variant text-sm mt-1">查看你的练习轨迹与偏好，所有数据均仅存于本设备。</p>
+    </div>
+    <!-- Profile header -->
+    <section class="rounded-lg bg-surface-container-lowest p-card-inner-padding shadow-[0_12px_36px_rgba(28,107,80,0.05)] flex items-center gap-4 mb-section-gap relative overflow-hidden">
+      <div class="absolute -right-8 -top-8 w-40 h-40 bg-primary-container/20 rounded-full blur-2xl pointer-events-none"></div>
+      <div class="w-16 h-16 rounded-full bg-primary flex items-center justify-center text-on-primary shrink-0"><span class="material-symbols-outlined text-[32px]">spa</span></div>
+      <div class="flex flex-col">
+        <span class="font-headline-md text-headline-md text-on-surface font-semibold">状态概览</span>
+        <span class="font-label-md text-label-md text-on-surface-variant text-sm">所有数据均仅存于本设备</span>
+      </div>
+    </section>
+
+    <!-- 认识自己 · 状态中心（与小程序 self 页对齐） -->
+    <section class="rounded-lg bg-surface-container-lowest p-card-inner-padding shadow-[0_12px_36px_rgba(28,107,80,0.05)] mb-section-gap">
+      <div class="flex items-center gap-2 mb-1"><span class="material-symbols-outlined text-primary">insights</span><h3 class="font-headline-md text-body-md text-on-surface font-semibold">认识自己 · 状态中心</h3></div>
+      <p class="font-label-md text-label-md text-on-surface-variant text-xs mb-4">圆点表示你近期的状态趋势，<strong class="text-on-surface">是个人状态可视化，不是医学评分</strong>。在 App 内会随你的记录与自测累积；网页版为示例展示。</p>
+      <div id="dim-dots" class="grid grid-cols-5 gap-3"></div>
+      <div class="mt-4 rounded-DEFAULT bg-surface-container-low px-4 py-3 flex items-center justify-between">
+        <span class="font-body-md text-body-md text-on-surface-variant text-sm">想看更完整的状态报告？</span>
+        <a href="assessment.html" class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-container/50 text-primary font-label-md text-label-md font-semibold hover:bg-primary-container transition-all"><span class="material-symbols-outlined text-[18px]">quiz</span>做权威自测</a>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <div class="grid grid-cols-3 gap-4 mb-section-gap">
+      <div class="rounded-lg bg-surface-container-lowest p-card-inner-padding shadow-[0_12px_36px_rgba(28,107,80,0.05)] text-center">
+        <span id="stat-days" class="font-headline-md text-headline-md text-primary font-bold block">0</span>
+        <span class="font-label-md text-label-md text-on-surface-variant text-xs">累计练习天数</span>
+      </div>
+      <div class="rounded-lg bg-surface-container-lowest p-card-inner-padding shadow-[0_12px_36px_rgba(28,107,80,0.05)] text-center">
+        <span id="stat-count" class="font-headline-md text-headline-md text-secondary font-bold block">0</span>
+        <span class="font-label-md text-label-md text-on-surface-variant text-xs">完成练习次数</span>
+      </div>
+      <div class="rounded-lg bg-surface-container-lowest p-card-inner-padding shadow-[0_12px_36px_rgba(28,107,80,0.05)] text-center">
+        <span id="stat-streak" class="font-headline-md text-headline-md text-primary font-bold block">0</span>
+        <span class="font-label-md text-label-md text-on-surface-variant text-xs">连续打卡天数</span>
+      </div>
+    </div>
+
+    <!-- Effective methods -->
+    <section class="rounded-lg bg-surface-container-lowest p-card-inner-padding shadow-[0_12px_36px_rgba(28,107,80,0.05)] mb-section-gap">
+      <div class="flex items-center gap-2 mb-4"><span class="material-symbols-outlined text-primary">auto_awesome</span><h3 class="font-headline-md text-body-md text-on-surface font-semibold">过去对我有效的方法</h3></div>
+      <div id="methods-empty" class="hidden rounded-DEFAULT bg-surface-container-low px-4 py-6 text-center">
+        <span class="font-label-md text-label-md text-on-surface-variant text-sm">还没有练习记录——先去 <a href="toolbox.html" class="text-primary underline">疗愈工具箱</a> 试试，第一次会出现在这里。</span>
+      </div>
+      <div id="methods-list" class="flex flex-col gap-3"></div>
+    </section>
+
+    <!-- Settings -->
+    <section class="rounded-lg bg-surface-container-lowest p-card-inner-padding shadow-[0_12px_36px_rgba(28,107,80,0.05)]">
+      <h3 class="font-headline-md text-body-md text-on-surface font-semibold mb-3">设置</h3>
+      <div class="flex flex-col">
+        <div class="flex items-center justify-between py-3 border-b border-surface-container-low">
+          <div class="flex items-center gap-3"><span class="material-symbols-outlined text-on-surface-variant">lock</span><span class="font-body-md text-body-md text-on-surface">本地端到端加密</span></div>
+          <button id="enc-toggle" class="w-12 h-7 rounded-full bg-primary relative transition-colors" aria-pressed="true"><span class="absolute right-1 top-1 w-5 h-5 rounded-full bg-white transition-all"></span></button>
+        </div>
+        <a href="breathing-space.html" class="flex items-center justify-between py-3 border-b border-surface-container-low hover:bg-surface-container-low/50 transition-colors"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-on-surface-variant">tune</span><span class="font-body-md text-body-md text-on-surface">练习偏好</span></div><span class="material-symbols-outlined text-on-surface-variant">chevron_right</span></a>
+        <a href="assessment.html" class="flex items-center justify-between py-3 border-b border-surface-container-low hover:bg-surface-container-low/50 transition-colors"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-on-surface-variant">quiz</span><span class="font-body-md text-body-md text-on-surface">我的自测记录</span></div><span class="material-symbols-outlined text-on-surface-variant">chevron_right</span></a>
+        <a href="privacy.html" class="flex items-center justify-between py-3 hover:bg-surface-container-low/50 transition-colors"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-on-surface-variant">verified_user</span><span class="font-body-md text-body-md text-on-surface">隐私与合规</span></div><span class="material-symbols-outlined text-on-surface-variant">chevron_right</span></a>
+      </div>
+    </section>
+  </div>
+</main>
+</div>
+<script>
+  // 个人中心：基于本机真实记录渲染状态 + 统计 + 有效方法。
+  // 数据来源：JY.getStats() 读 jy_practice_log / jy_mood_log / jy_assess_history。
+  (function renderProfile(){
+    var stats = (window.JY && JY.getStats) ? JY.getStats() : null;
+    if(!stats) return;
+
+    // 1) 顶部三张统计卡
+    function setText(id, v){ var el = document.getElementById(id); if(el) el.textContent = String(v); }
+    setText('stat-days', stats.practiceDays);
+    setText('stat-count', stats.practiceCount);
+    setText('stat-streak', stats.streak);
+
+    // 2) 五维状态圆点
+    var dotsEl = document.getElementById('dim-dots');
+    if(dotsEl){
+      dotsEl.innerHTML = '';
+      var ICONS = { anxiety:'psychology', sleep:'bedtime', mood:'mood', energy:'bolt', stress:'waves' };
+      stats.dims.forEach(function(d){
+        var cell = document.createElement('div');
+        cell.className = 'flex flex-col items-center gap-2';
+        var size = 56;
+        if(d.level == null){
+          cell.innerHTML =
+            '<div class="w-14 h-14 rounded-full bg-surface-container-low flex items-center justify-center text-on-surface-variant/60"><span class="material-symbols-outlined text-[20px]">'+(ICONS[d.key]||'help')+'</span></div>'+
+            '<span class="font-label-md text-label-md text-on-surface text-sm">'+d.label+'</span>'+
+            '<span class="font-label-md text-label-md text-on-surface-variant text-[11px]">暂无数据</span>';
+        } else {
+          cell.innerHTML =
+            '<div class="relative w-14 h-14 rounded-full bg-surface-container-low flex items-center justify-center">'+
+              '<div class="rounded-full bg-primary" style="width:'+(size*d.level/100)+'px;height:'+(size*d.level/100)+'px;opacity:0.85"></div>'+
+            '</div>'+
+            '<span class="font-label-md text-label-md text-on-surface text-sm">'+d.label+'</span>'+
+            '<span class="font-label-md text-label-md text-on-surface-variant text-[11px]">'+d.level+'%</span>';
+        }
+        dotsEl.appendChild(cell);
+      });
+    }
+
+    // 3) 有效方法（按练习次数倒序；空数据时显示空提示）
+    var listEl = document.getElementById('methods-list');
+    var emptyEl = document.getElementById('methods-empty');
+    if(listEl){
+      if(!stats.methods.length){
+        if(emptyEl) emptyEl.classList.remove('hidden');
+        listEl.classList.add('hidden');
+      } else {
+        if(emptyEl) emptyEl.classList.add('hidden');
+        listEl.classList.remove('hidden');
+        listEl.innerHTML = '';
+        stats.methods.forEach(function(m){
+          var row = document.createElement('div');
+          row.className = 'flex items-center justify-between bg-surface-container-low rounded-DEFAULT px-4 py-3';
+          var icon = (window.JY && JY.TOOL_ICON && JY.TOOL_ICON[m.key]) || 'self_improvement';
+          row.innerHTML =
+            '<div class="flex items-center gap-3">'+
+              '<span class="w-9 h-9 rounded-full bg-primary-container/50 flex items-center justify-center text-primary"><span class="material-symbols-outlined text-[20px]">'+icon+'</span></span>'+
+              '<span class="font-body-md text-body-md text-on-surface">'+m.label+'</span>'+
+            '</div>'+
+            '<span class="font-label-md text-label-md text-on-surface-variant text-sm">共 '+m.count+' 次练习</span>';
+          listEl.appendChild(row);
+        });
+      }
+    }
+  })();
+
+  (function profileToggle(){
+    const t = document.getElementById('enc-toggle');
+    if(!t) return;
+    t.addEventListener('click', () => {
+      const on = t.getAttribute('aria-pressed') === 'true';
+      t.setAttribute('aria-pressed', String(!on));
+      if(on){ t.classList.remove('bg-primary'); t.classList.add('bg-surface-variant'); t.querySelector('span').classList.remove('right-1'); t.querySelector('span').classList.add('left-1'); }
+      else { t.classList.add('bg-primary'); t.classList.remove('bg-surface-variant'); t.querySelector('span').classList.add('right-1'); t.querySelector('span').classList.remove('left-1'); }
+    });
+  })();
+  (function(){ const cur=location.pathname.split('/').pop()||'profile.html'; const map={'index.html':'overview','toolbox.html':'toolbox','breathing-space.html':'breathing-space','mood.html':'mood-and-insights','science.html':'science-basis','knowledge.html':'knowledge','assessment.html':'assessment','safety.html':'safety','privacy.html':'compliance-privacy','profile.html':'profile'}; const ap=map[cur]; document.querySelectorAll('aside nav a.nav-link').forEach(a=>{ if(a.dataset.path===ap){ a.classList.add('bg-primary-container','text-on-primary-container','font-semibold'); a.classList.remove('text-on-surface-variant'); a.setAttribute('aria-current','page'); } }); })();
+</script>
+</body>
+</html>

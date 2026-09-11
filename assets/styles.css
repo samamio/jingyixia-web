@@ -1,0 +1,53 @@
+/* 静一下 · Serenity & Breath — shared base styles (static site, no build step) */
+@layer base {
+  html, body { margin: 0; padding: 0; }
+  body { overscroll-behavior: none; }
+  main > :first-child { margin-top: 0 !important; }
+  main > :last-child { margin-bottom: 0 !important; }
+}
+::-webkit-scrollbar { display: none; }
+* { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* Spinner used by the mood-log "saving" button */
+@keyframes jy-spin { to { transform: rotate(360deg); } }
+.material-symbols-outlined.animate-spin { animation: jy-spin 0.9s linear infinite; }
+
+/* Hero breath pulse (overview) */
+@keyframes breath-pulse {
+  0%, 100% { transform: scale(0.92); opacity: 0.55; }
+  50% { transform: scale(1.08); opacity: 0.9; }
+}
+.breath-pulse { animation: breath-pulse 6s ease-in-out infinite; }
+
+/* Ambient floating ring for breathing mandala */
+@keyframes aura-float {
+  0%, 100% { transform: scale(0.97); opacity: 0.6; }
+  50% { transform: scale(1.03); opacity: 0.85; }
+}
+.aura-float { animation: aura-float 5s ease-in-out infinite; }
+
+/* Calm gradient placeholder for external photos (Serenity palette) */
+.zen-photo {
+  background: linear-gradient(135deg, #7cc6a6 0%, #32647d 100%);
+  position: relative;
+  overflow: hidden;
+}
+.zen-photo::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(120px 80px at 75% 20%, rgba(255,255,255,0.35), transparent 70%),
+    radial-gradient(160px 120px at 20% 85%, rgba(124,198,166,0.5), transparent 70%);
+}
+.zen-photo .material-symbols-outlined {
+  position: relative;
+  z-index: 1;
+}
+
+/* Mobile: collapse fixed sidebar into a top bar feel is handled inline per page */
+@media (max-width: 1023px) {
+  aside.jy-sidebar { display: none; }
+  div.jy-main-wrap { padding-left: 0 !important; }
+  header.jy-header { left: 0 !important; }
+}

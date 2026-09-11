@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>静一下心 · 安全与帮助</title>
+<link rel="icon" href="assets/logo.png"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link rel="stylesheet" href="assets/styles.css"/>
+<script src="assets/nav.js"></script>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="assets/tailwind-setup.js"></script>
+</head>
+<body class="bg-background font-body-md text-body-md text-on-surface antialiased">
+<aside class="jy-sidebar fixed left-0 top-0 h-screen w-72 bg-surface-container-lowest/80 backdrop-blur-xl z-50 flex flex-col justify-between p-container-padding shadow-[0_1px_12px_rgba(28,107,80,0.05)]">
+  <div class="flex flex-col gap-stack-gap">
+    <div class="flex items-center gap-stack-gap px-card-inner-padding py-2">
+      <img alt="静一下心 品牌标志" class="h-8 w-auto object-contain" src="assets/logo.png"/>
+      <div class="flex flex-col"><span class="font-headline-md text-body-lg text-primary tracking-tight font-semibold">静一下心</span><span class="font-label-md text-label-md text-on-surface-variant opacity-80 text-[12px] leading-tight">科学缓解焦虑</span></div>
+    </div>
+    <div class="h-[1px] w-full bg-surface-container-high/60 my-1"></div>
+    <nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-full">
+      <a class="nav-link flex items-center gap-3 px-card-inner-padding py-3 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="overview" href="index.html"><span class="material-symbols-outlined text-[20px]">cottage</span><span class="font-label-md text-label-md">首页</span></a>
+      <a class="nav-link flex items-center gap-3 px-card-inner-padding py-3 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="toolbox" href="toolbox.html"><span class="material-symbols-outlined text-[20px]">self_improvement</span><span class="font-label-md text-label-md">疗愈工具箱</span></a>
+      <a class="nav-link flex items-center gap-3 px-card-inner-padding py-3 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="mood-and-insights" href="mood.html"><span class="material-symbols-outlined text-[20px]">auto_graph</span><span class="font-label-md text-label-md">情绪日志</span></a>
+      <a class="nav-link flex items-center gap-3 px-card-inner-padding py-3 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="science-basis" href="science.html"><span class="material-symbols-outlined text-[20px]">psychology</span><span class="font-label-md text-label-md">科学依据</span></a>
+      <a class="nav-link flex items-center gap-3 px-card-inner-padding py-3 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="knowledge" href="knowledge.html"><span class="material-symbols-outlined text-[20px]">menu_book</span><span class="font-label-md text-label-md">焦虑知识库</span></a>
+      <a class="nav-link flex items-center gap-3 px-card-inner-padding py-3 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="assessment" href="assessment.html"><span class="material-symbols-outlined text-[20px]">quiz</span><span class="font-label-md text-label-md">权威自测</span></a>
+      <a class="nav-link flex items-center gap-3 px-card-inner-padding py-3 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="safety" href="safety.html"><span class="material-symbols-outlined text-[20px]">support_agent</span><span class="font-label-md text-label-md">安全与帮助</span></a>
+    </nav>
+  </div>
+  <div class="flex flex-col gap-stack-gap">
+    <div class="h-[1px] w-full bg-surface-container-high/60"></div>
+    <nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-full">
+      <a class="nav-link flex items-center gap-3 px-card-inner-padding py-2.5 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="compliance-privacy" href="privacy.html"><span class="material-symbols-outlined text-[20px]">verified_user</span><span class="font-label-md text-label-md">隐私与合规</span></a>
+      <a class="nav-link flex items-center gap-3 px-card-inner-padding py-2.5 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="profile" href="profile.html"><span class="material-symbols-outlined text-[20px]">account_circle</span><span class="font-label-md text-label-md">个人中心</span></a>
+    </nav>
+    <div class="px-card-inner-padding py-2 flex items-center justify-between text-on-surface-variant/60 font-label-md text-[12px]"><span>心境平伏 呼吸自然</span><span class="material-symbols-outlined text-[16px] text-primary">spa</span></div>
+  </div>
+</aside>
+<div class="jy-main-wrap pl-72">
+<header class="jy-header fixed top-0 left-72 right-0 h-16 bg-surface/75 backdrop-blur-xl shadow-[0_1px_8px_rgba(28,107,80,0.03)] z-40 flex items-center justify-between px-section-gap">
+  <div class="flex items-center gap-stack-gap">
+    <a href="index.html" onclick="if(window.JY&amp;&amp;JY.goBack){JY.goBack(event);}else{location.href='index.html';}" class="group flex items-center justify-center w-9 h-9 -ml-2 mr-1 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-primary transition-all" aria-label="返回上一级" title="返回"><span class="material-symbols-outlined text-[22px]">arrow_back</span></a>
+    <img alt="静一下心 品牌标志" class="h-8 w-auto object-contain" src="assets/logo.png"/>
+    <span class="font-headline-md text-body-md text-on-surface font-medium hidden sm:inline">静一下心</span>
+  </div>
+  <div class="flex items-center gap-4">
+    <div class="flex items-center bg-surface-container-low px-4 py-1.5 rounded-full text-on-surface-variant"><span class="material-symbols-outlined text-[18px] text-primary mr-2">spa</span><span class="font-label-md text-label-md text-on-surface-variant">身心处于平缓状态</span></div>
+  </div>
+</header>
+<main class="w-full pt-16 bg-surface min-h-screen px-section-gap py-container-padding">
+  <div class="flex flex-col w-full max-w-3xl mx-auto">
+    <div class="mb-section-gap">
+      <h1 class="font-headline-lg text-headline-lg text-on-surface">安全与帮助</h1>
+      <p class="font-body-md text-body-md text-on-surface-variant text-sm mt-1">当你或身边的人处在困境中，下面这些信息可以帮助你找到专业的支持。</p>
+    </div>
+
+    <!-- Emergency -->
+    <section class="rounded-lg bg-error-container/40 p-card-inner-padding shadow-[0_8px_24px_rgba(28,107,80,0.04)] flex items-start gap-4 mb-section-gap">
+      <span class="w-12 h-12 rounded-full bg-error text-on-error flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-[26px]">emergency</span></span>
+      <div>
+        <h2 class="font-headline-md text-headline-md text-on-surface font-semibold">如果正处在紧急危险中</h2>
+        <p class="font-body-md text-body-md text-on-surface-variant text-sm mt-1 leading-relaxed">如果你或他人有伤害自己的念头、已采取行动，或面临立即的生命危险，请<strong class="text-error">立刻</strong>拨打当地急救电话（中国大陆 <strong class="text-error">120</strong>）或报警电话（<strong class="text-error">110</strong>），也可以直接前往最近的医院急诊。不要独自硬扛。</p>
+      </div>
+    </section>
+
+    <!-- Professional help -->
+    <section class="rounded-lg bg-surface-container-lowest p-card-inner-padding shadow-[0_12px_36px_rgba(28,107,80,0.05)] mb-section-gap">
+      <h3 class="font-headline-md text-headline-md text-on-surface font-semibold mb-3">什么时候该寻求专业帮助</h3>
+      <ul class="flex flex-col gap-2 font-body-md text-body-md text-on-surface-variant text-sm list-disc pl-5">
+        <li>焦虑、低落或睡眠问题几乎每天出现，并持续超过两周。</li>
+        <li>明显影响工作、学习、社交或日常自理。</li>
+        <li>出现惊恐发作、强烈的回避行为，或反复有伤害自己的念头。</li>
+        <li>自我调节与工具练习后，状态仍没有改善甚至加重。</li>
+      </ul>
+      <p class="font-body-md text-body-md text-on-surface-variant text-sm mt-3 leading-relaxed">可以前往<strong class="text-on-surface">精神科、心理科或综合医院心理门诊</strong>做评估；心理咨询可通过中国心理学会注册系统、医院心理科等渠道寻找有资质的专业人员。精神科诊断需由具备资质的医疗机构做出。</p>
+    </section>
+
+    <!-- disclaimer -->
+    <div class="rounded-lg bg-surface-container-lowest p-card-inner-padding shadow-[0_12px_36px_rgba(28,107,80,0.05)] flex items-start gap-3">
+      <span class="material-symbols-outlined text-primary text-[22px] shrink-0">info</span>
+      <p class="font-body-md text-body-md text-on-surface-variant text-xs leading-relaxed">静一下心为通用身心健康（General Wellness）辅助工具，<strong class="text-on-surface">不提供医疗诊断、不替代专业治疗</strong>。本页信息仅供指引，不构成紧急救助承诺；在紧急情况下请以当地急救与专业机构为准。</p>
+    </div>
+  </div>
+</main>
+</div>
+<script>
+  (function(){ const cur=location.pathname.split('/').pop()||'safety.html'; const map={'index.html':'overview','toolbox.html':'toolbox','breathing-space.html':'breathing-space','mood.html':'mood-and-insights','science.html':'science-basis','knowledge.html':'knowledge','assessment.html':'assessment','safety.html':'safety','privacy.html':'compliance-privacy','profile.html':'profile'}; const ap=map[cur]; document.querySelectorAll('aside nav a.nav-link').forEach(a=>{ if(a.dataset.path===ap){ a.classList.add('bg-primary-container','text-on-primary-container','font-semibold'); a.classList.remove('text-on-surface-variant'); a.setAttribute('aria-current','page'); } }); })();
+</script>
+</body>
+</html>

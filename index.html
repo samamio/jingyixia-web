@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>静一下心 · 让我静一下</title>
+<link rel="icon" href="assets/logo.png"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link rel="stylesheet" href="assets/styles.css"/>
+<script src="assets/nav.js"></script>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="assets/tailwind-setup.js"></script>
+</head>
+<body class="bg-background font-body-md text-body-md text-on-surface antialiased">
+<aside class="jy-sidebar fixed left-0 top-0 h-screen w-72 bg-surface-container-lowest/80 backdrop-blur-xl z-50 flex flex-col justify-between p-container-padding shadow-[0_1px_12px_rgba(28,107,80,0.05)]">
+  <div class="flex flex-col gap-stack-gap">
+    <div class="flex items-center gap-stack-gap px-card-inner-padding py-2">
+      <img alt="静一下心 品牌标志" class="h-8 w-auto object-contain" src="assets/logo.png"/>
+      <div class="flex flex-col"><span class="font-headline-md text-body-lg text-primary tracking-tight font-semibold">静一下心</span><span class="font-label-md text-label-md text-on-surface-variant opacity-80 text-[12px] leading-tight">科学缓解焦虑</span></div>
+    </div>
+    <div class="h-[1px] w-full bg-surface-container-high/60 my-1"></div>
+    <nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-full">
+      <a class="nav-link flex items-center gap-3 px-card-inner-padding py-3 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="overview" href="index.html"><span class="material-symbols-outlined text-[20px]">cottage</span><span class="font-label-md text-label-md">首页</span></a>
+      <a class="nav-link flex items-center gap-3 px-card-inner-padding py-3 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="toolbox" href="toolbox.html"><span class="material-symbols-outlined text-[20px]">self_improvement</span><span class="font-label-md text-label-md">疗愈工具箱</span></a>
+      <a class="nav-link flex items-center gap-3 px-card-inner-padding py-3 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="mood-and-insights" href="mood.html"><span class="material-symbols-outlined text-[20px]">auto_graph</span><span class="font-label-md text-label-md">情绪日志</span></a>
+      <a class="nav-link flex items-center gap-3 px-card-inner-padding py-3 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="science-basis" href="science.html"><span class="material-symbols-outlined text-[20px]">psychology</span><span class="font-label-md text-label-md">科学依据</span></a>
+      <a class="nav-link flex items-center gap-3 px-card-inner-padding py-3 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="knowledge" href="knowledge.html"><span class="material-symbols-outlined text-[20px]">menu_book</span><span class="font-label-md text-label-md">焦虑知识库</span></a>
+      <a class="nav-link flex items-center gap-3 px-card-inner-padding py-3 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="assessment" href="assessment.html"><span class="material-symbols-outlined text-[20px]">quiz</span><span class="font-label-md text-label-md">权威自测</span></a>
+      <a class="nav-link flex items-center gap-3 px-card-inner-padding py-3 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="safety" href="safety.html"><span class="material-symbols-outlined text-[20px]">support_agent</span><span class="font-label-md text-label-md">安全与帮助</span></a>
+    </nav>
+  </div>
+  <div class="flex flex-col gap-stack-gap">
+    <div class="h-[1px] w-full bg-surface-container-high/60"></div>
+    <nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-full">
+      <a class="nav-link flex items-center gap-3 px-card-inner-padding py-2.5 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="compliance-privacy" href="privacy.html"><span class="material-symbols-outlined text-[20px]">verified_user</span><span class="font-label-md text-label-md">隐私与合规</span></a>
+      <a class="nav-link flex items-center gap-3 px-card-inner-padding py-2.5 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="profile" href="profile.html"><span class="material-symbols-outlined text-[20px]">account_circle</span><span class="font-label-md text-label-md">个人中心</span></a>
+    </nav>
+    <div class="px-card-inner-padding py-2 flex items-center justify-between text-on-surface-variant/60 font-label-md text-[12px]"><span>心境平伏 呼吸自然</span><span class="material-symbols-outlined text-[16px] text-primary">spa</span></div>
+  </div>
+</aside>
+<div class="jy-main-wrap pl-72">
+<header class="jy-header fixed top-0 left-72 right-0 h-16 bg-surface/75 backdrop-blur-xl shadow-[0_1px_8px_rgba(28,107,80,0.03)] z-40 flex items-center justify-between px-section-gap">
+  <div class="flex items-center gap-stack-gap">
+    <img alt="静一下心 品牌标志" class="h-8 w-auto object-contain" src="assets/logo.png"/>
+    <span class="font-headline-md text-body-md text-on-surface font-medium hidden sm:inline">静一下心</span>
+  </div>
+  <div class="flex items-center gap-4">
+    <div class="flex items-center bg-surface-container-low px-4 py-1.5 rounded-full text-on-surface-variant"><span class="material-symbols-outlined text-[18px] text-primary mr-2">spa</span><span class="font-label-md text-label-md text-on-surface-variant">身心处于平缓状态</span></div>
+  </div>
+</header>
+<main class="w-full pt-16 bg-surface min-h-screen px-section-gap py-container-padding">
+  <div class="flex flex-col w-full max-w-4xl mx-auto">
+    <!-- Greeting -->
+    <div class="mb-section-gap">
+      <p class="font-label-md text-label-md text-on-surface-variant" id="today-label">今天也慢慢来</p>
+      <h1 class="font-headline-lg text-headline-lg text-on-surface mt-1">现在感觉怎么样？</h1>
+      <p class="font-body-md text-body-md text-on-surface-variant text-sm mt-1">选一个最贴近此刻的状态，我为你推荐一个马上能做的练习。</p>
+    </div>
+
+    <!-- Calm engine -->
+    <section id="calm" class="rounded-lg bg-surface-container-lowest p-card-inner-padding shadow-[0_12px_36px_rgba(28,107,80,0.05)] relative overflow-hidden mb-section-gap">
+      <div class="absolute -right-10 -top-10 w-52 h-52 bg-primary-container/20 rounded-full blur-3xl pointer-events-none"></div>
+      <div id="state-prompt" class="relative z-10">
+        <h2 class="font-headline-md text-headline-md text-on-surface mb-4 flex items-center gap-2"><span class="material-symbols-outlined text-primary">self_improvement</span>让我静一下</h2>
+        <div id="state-grid" class="grid grid-cols-2 sm:grid-cols-3 gap-3"></div>
+      </div>
+      <div id="rec-panel" class="relative z-10 hidden"></div>
+    </section>
+
+
+    <!-- 最近对我有效（Web 为示例，App 内随使用累积） -->
+    <section class="mb-section-gap">
+      <h3 class="font-headline-md text-body-lg text-on-surface font-semibold flex items-center gap-2 mb-1"><span class="material-symbols-outlined text-primary">auto_awesome</span>最近对我有效</h3>
+      <p class="font-label-md text-label-md text-on-surface-variant text-xs mb-4">在 App 内，这里会根据你的使用与反馈自动累积；网页版先为你挑几样常试的方法。</p>
+      <div class="flex flex-col gap-3">
+        <div class="flex items-center justify-between bg-surface-container-lowest rounded-DEFAULT px-4 py-3 shadow-[0_12px_36px_rgba(28,107,80,0.04)]">
+          <div class="flex items-center gap-3"><span class="w-9 h-9 rounded-full bg-primary-container/50 flex items-center justify-center text-primary"><span class="material-symbols-outlined text-[20px]">air</span></span><span class="font-body-md text-body-md text-on-surface">呼吸训练</span></div>
+          <span class="font-label-md text-label-md text-on-surface-variant text-sm">适合身体紧绷、心慌时</span>
+        </div>
+        <div class="flex items-center justify-between bg-surface-container-lowest rounded-DEFAULT px-4 py-3 shadow-[0_12px_36px_rgba(28,107,80,0.04)]">
+          <div class="flex items-center gap-3"><span class="w-9 h-9 rounded-full bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed"><span class="material-symbols-outlined text-[20px]">visibility</span></span><span class="font-body-md text-body-md text-on-surface">54321 练习</span></div>
+          <span class="font-label-md text-label-md text-on-surface-variant text-sm">适合脑子停不下来时</span>
+        </div>
+        <div class="flex items-center justify-between bg-surface-container-lowest rounded-DEFAULT px-4 py-3 shadow-[0_12px_36px_rgba(28,107,80,0.04)]">
+          <div class="flex items-center gap-3"><span class="w-9 h-9 rounded-full bg-secondary-container/50 flex items-center justify-center text-on-secondary-container"><span class="material-symbols-outlined text-[20px]">grid_view</span></span><span class="font-body-md text-body-md text-on-surface">动态舒尔特</span></div>
+          <span class="font-label-md text-label-md text-on-surface-variant text-sm">适合反刍打转时</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- banner -->
+    <div class="rounded-lg bg-gradient-to-r from-primary/10 via-surface-container-lowest to-secondary/10 p-card-inner-padding shadow-[0_8px_24px_rgba(28,107,80,0.04)] flex items-center gap-4">
+      <span class="w-12 h-12 rounded-full bg-primary text-on-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-[24px]">psychology_alt</span></span>
+      <div>
+        <h4 class="font-headline-md text-body-md text-on-surface font-semibold">想先了解焦虑是什么？</h4>
+        <p class="font-body-md text-body-md text-xs text-on-surface-variant mt-0.5">翻阅<a href="knowledge.html" class="text-primary font-semibold underline">焦虑知识库</a>，或看看<a href="science.html" class="text-primary font-semibold underline">科学依据</a>。</p>
+      </div>
+    </div>
+  </div>
+</main>
+</div>
+<script>
+  // 即时干预引擎（与小程序 engine.js 对齐）
+  const STATES = [
+    { key:'ruminate', label:'脑子停不下来', icon:'graphic_eq', desc:'反复想同一件事，停不下来' },
+    { key:'worry', label:'一直担心', icon:'help', desc:'对还没发生的事感到不安' },
+    { key:'tense', label:'身体很紧', icon:'self_improvement', desc:'肩颈发紧、心跳快、喘不上气' },
+    { key:'sleep', label:'睡不好', icon:'dark_mode', desc:'躺下后思绪乱飞、入睡难、半夜醒' },
+    { key:'low', label:'什么都不想做', icon:'self_care', desc:'没力气、提不起劲、不想动' },
+    { key:'unsure', label:'说不上来', icon:'info', desc:'就是感觉不太对劲' }
+  ];
+  const TOOL_NAME = { schulte:'动态舒尔特', breathing:'呼吸训练', grounding:'54321 练习', pmr:'身体放松', stroop:'Stroop 训练', tiny:'微小行动', rumination:'反刍打断', sleep:'睡前放松', sleepmind:'睡前思绪整理', nightwake:'夜间醒来' };
+  const TOOL_HREF = { schulte:'toolbox.html#schulte', breathing:'breathing-space.html', grounding:'toolbox.html#grounding', pmr:'toolbox.html#pmr', stroop:'toolbox.html#stroop', tiny:'toolbox.html#tiny', rumination:'toolbox.html#rumination', sleep:'toolbox.html#sleep', sleepmind:'toolbox.html#sleepmind', nightwake:'toolbox.html#nightwake' };
+  const TOOL_ICON = { schulte:'grid_view', breathing:'air', grounding:'visibility', pmr:'fitness_center', stroop:'style', tiny:'emoji_objects', rumination:'psychology', sleep:'bedtime', sleepmind:'edit_note', nightwake:'dark_mode' };
+  function matchIntervention(state){
+    switch(state){
+      case 'ruminate': return { tool:'schulte', why:'反复思考会持续占用注意力，一个需要专注的小任务能帮你暂时把思绪拉出来。' };
+      case 'worry': return { tool:'grounding', why:'把担心的事写下来、判断它现在能不能解决，能减少它在脑子里打转；解决不了的，用五感回到当下。' };
+      case 'tense': return { tool:'breathing', why:'身体紧绷时，缓慢的呼吸能帮副交感神经接手，让心跳和肌肉慢慢松开。' };
+      case 'sleep': return { tool:'sleep', why:'睡前把呼吸放慢、身体松开，是失眠认知行为治疗里最基础的一步。' };
+      case 'low': return { tool:'tiny', why:'没力气的时候，一个极小、马上能完成的动作，比“打起精神”更容易开始。' };
+      default: return { tool:'breathing', why:'说不清的时候，先让身体慢下来，往往比硬想清楚更有用。' };
+    }
+  }
+
+  const grid = document.getElementById('state-grid');
+  const promptEl = document.getElementById('state-prompt');
+  const recPanel = document.getElementById('rec-panel');
+
+  STATES.forEach(s => {
+    const b = document.createElement('button');
+    b.className = 'flex flex-col items-center gap-2 rounded-DEFAULT bg-surface-container-low hover:bg-surface-container px-3 py-4 transition-all text-center';
+    b.innerHTML = '<span class="w-12 h-12 rounded-full bg-primary-container/40 flex items-center justify-center text-primary"><span class="material-symbols-outlined text-[26px]">'+s.icon+'</span></span><span class="font-headline-md text-body-md text-on-surface font-semibold">'+s.label+'</span><span class="font-label-md text-label-md text-on-surface-variant text-xs">'+s.desc+'</span>';
+    b.addEventListener('click', () => showRec(s));
+    grid.appendChild(b);
+  });
+
+  function recCard(tool, why, extra){
+    return '<div class="rounded-DEFAULT bg-surface-container-low p-card-inner-padding flex flex-col gap-3">'+
+      '<div class="flex items-center gap-3"><span class="w-11 h-11 rounded-full bg-primary-container/50 flex items-center justify-center text-primary"><span class="material-symbols-outlined text-[24px]">'+TOOL_ICON[tool]+'</span></span><div><span class="font-label-md text-label-md text-on-surface-variant text-xs">试试这个</span><span class="font-headline-md text-body-md text-on-surface font-semibold block">'+TOOL_NAME[tool]+'</span></div></div>'+
+      '<p class="font-body-md text-body-md text-on-surface-variant text-sm">'+why+'</p>'+
+      (extra||'')+
+      '<div class="flex items-center gap-3"><a href="'+TOOL_HREF[tool]+'" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-primary text-on-primary font-label-md text-label-md font-semibold hover:bg-primary/95 transition-all"><span class="material-symbols-outlined text-[18px]">play_arrow</span>开始</a>'+
+      '<button id="reset-rec" class="px-4 py-2.5 rounded-full bg-surface-container-low text-on-surface-variant font-label-md text-label-md hover:bg-surface-container transition-all">换一个状态</button></div>'+
+      '</div>';
+  }
+
+  const BACK_BTN = '<button onclick="resetRec()" class="flex items-center gap-2 text-on-surface-variant hover:text-on-surface mb-4 font-label-md text-label-md"><span class="material-symbols-outlined text-[20px]">arrow_back</span>返回 · 让我静一下</button>';
+  function showRec(s){
+    promptEl.classList.add('hidden');
+    recPanel.classList.remove('hidden');
+    if(s.key === 'sleep'){
+      // 睡眠场景：展示三个睡眠工具供选择
+      let cards = '';
+      ['sleep','sleepmind','nightwake'].forEach(t => { cards += recCard(t, matchIntervention('sleep').why, ''); });
+      recPanel.innerHTML = BACK_BTN + '<h2 class="font-headline-md text-headline-md text-on-surface mb-1 flex items-center gap-2"><span class="material-symbols-outlined text-primary">bedtime</span>睡不好，挑一个开始</h2><p class="font-body-md text-body-md text-on-surface-variant text-sm mb-4">睡前放松、睡前思绪整理、夜间醒来，对应不同的情况。</p><div class="grid grid-cols-1 md:grid-cols-3 gap-4">'+cards+'</div>';
+    } else {
+      const m = matchIntervention(s.key);
+      const note = s.key==='worry' ? '<p class="font-label-md text-label-md text-on-surface-variant text-xs">提示：先把担心的事写下来，判断它现在能不能解决。</p>' : '';
+      recPanel.innerHTML = BACK_BTN + recCard(m.tool, m.why, note);
+    }
+    recPanel.querySelector('#reset-rec') && recPanel.querySelector('#reset-rec').addEventListener('click', resetRec);
+    window.scrollTo(0,0);
+  }
+  function resetRec(){ recPanel.classList.add('hidden'); recPanel.innerHTML=''; promptEl.classList.remove('hidden'); }
+
+  // deep link: index.html#calm?state=xxx
+  const pm = new URLSearchParams(location.search);
+  const hs = location.hash.match(/state=([a-z]+)/);
+  const initState = pm.get('state') || (hs && hs[1]);
+  if(initState && STATES.find(s=>s.key===initState)) showRec(STATES.find(s=>s.key===initState));
+</script>
+<script>
+  (function(){ const cur=location.pathname.split('/').pop()||'index.html'; const map={'index.html':'overview','toolbox.html':'toolbox','breathing-space.html':'breathing-space','mood.html':'mood-and-insights','science.html':'science-basis','knowledge.html':'knowledge','assessment.html':'assessment','safety.html':'safety','privacy.html':'compliance-privacy','profile.html':'profile'}; const ap=map[cur]; document.querySelectorAll('aside nav a.nav-link').forEach(a=>{ if(a.dataset.path===ap){ a.classList.add('bg-primary-container','text-on-primary-container','font-semibold'); a.classList.remove('text-on-surface-variant'); a.setAttribute('aria-current','page'); } }); })();
+</script>
+</body>
+</html>

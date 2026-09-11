@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>静一下 · 隐私与合规</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link rel="stylesheet" href="assets/styles.css"/>
+<script src="assets/nav.js"></script>
+<link rel="icon" href="assets/logo.png"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={darkMode:"class",theme:{extend:{"colors":{"tertiary-fixed":"#e9e2d2","surface-tint":"#1c6b50","surface":"#f7f9fc","surface-variant":"#e0e3e6","background":"#f7f9fc","inverse-surface":"#2d3133","on-primary":"#ffffff","primary-container":"#7cc6a6","on-secondary":"#ffffff","secondary-fixed-dim":"#9ccdea","surface-bright":"#f7f9fc","on-secondary-container":"#33657e","on-primary-fixed":"#002115","surface-container-lowest":"#ffffff","inverse-primary":"#8bd6b5","primary-fixed-dim":"#8bd6b5","on-secondary-fixed":"#001e2c","error":"#ba1a1a","on-surface":"#191c1e","on-error":"#ffffff","on-primary-fixed-variant":"#00513a","surface-container-high":"#e6e8eb","tertiary-container":"#bdb7a8","primary-fixed":"#a7f2d0","primary":"#1c6b50","on-tertiary-fixed":"#1e1c12","outline-variant":"#bfc9c2","on-tertiary":"#ffffff","secondary-fixed":"#c2e8ff","tertiary-fixed-dim":"#ccc6b7","inverse-on-surface":"#eff1f4","on-tertiary-container":"#4c483d","surface-container-highest":"#e0e3e6","outline":"#6f7973","on-surface-variant":"#3f4944","on-secondary-fixed-variant":"#144c64","on-error-container":"#93000a","surface-container":"#eceef1","surface-container-low":"#f2f4f7","surface-dim":"#d8dadd","on-primary-container":"#00533b","error-container":"#ffdad6","secondary":"#32647d","tertiary":"#625e52","on-background":"#191c1e","secondary-container":"#b0e1fe","on-tertiary-fixed-variant":"#4a473b"},"borderRadius":{"DEFAULT":"1rem","lg":"2rem","xl":"3rem","full":"9999px"},"spacing":{"unit":"8px","section-gap":"40px","stack-gap":"16px","card-inner-padding":"20px","container-padding":"24px"},"fontFamily":{"body-lg":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"]},"fontSize":{"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"600"}],"label-md":["14px",{"lineHeight":"20px","letterSpacing":"0.02em","fontWeight":"500"}],"headline-lg":["30px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-lg-mobile":["26px",{"lineHeight":"34px","fontWeight":"700"}]}}}}</script>
+</head>
+<body class="bg-background font-body-md text-body-md text-on-surface antialiased">
+<aside class="jy-sidebar fixed left-0 top-0 h-screen w-72 bg-surface-container-lowest/80 backdrop-blur-xl z-50 flex flex-col justify-between p-container-padding shadow-[0_1px_12px_rgba(28,107,80,0.05)]">
+  <div class="flex flex-col gap-stack-gap">
+    <div class="flex items-center gap-stack-gap px-card-inner-padding py-2">
+      <img alt="静一下心 品牌标志" class="h-8 w-auto object-contain" src="assets/logo.png"/>
+      <div class="flex flex-col"><span class="font-headline-md text-body-lg text-primary tracking-tight font-semibold">静一下心</span><span class="font-label-md text-label-md text-on-surface-variant opacity-80 text-[12px] leading-tight">科学缓解焦虑</span></div>
+    </div>
+    <div class="h-[1px] w-full bg-surface-container-high/60 my-1"></div>
+    <nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-full">
+      <a class="nav-link flex items-center gap-3 px-card-inner-padding py-3 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="overview" href="index.html"><span class="material-symbols-outlined text-[20px]">cottage</span><span class="font-label-md text-label-md">首页</span></a>
+      <a class="nav-link flex items-center gap-3 px-card-inner-padding py-3 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="toolbox" href="toolbox.html"><span class="material-symbols-outlined text-[20px]">self_improvement</span><span class="font-label-md text-label-md">疗愈工具箱</span></a>
+      <a class="nav-link flex items-center gap-3 px-card-inner-padding py-3 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="mood-and-insights" href="mood.html"><span class="material-symbols-outlined text-[20px]">auto_graph</span><span class="font-label-md text-label-md">情绪日志</span></a>
+      <a class="nav-link flex items-center gap-3 px-card-inner-padding py-3 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="science-basis" href="science.html"><span class="material-symbols-outlined text-[20px]">psychology</span><span class="font-label-md text-label-md">科学依据</span></a>
+      <a class="nav-link flex items-center gap-3 px-card-inner-padding py-3 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="knowledge" href="knowledge.html"><span class="material-symbols-outlined text-[20px]">menu_book</span><span class="font-label-md text-label-md">焦虑知识库</span></a>
+      <a class="nav-link flex items-center gap-3 px-card-inner-padding py-3 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="assessment" href="assessment.html"><span class="material-symbols-outlined text-[20px]">quiz</span><span class="font-label-md text-label-md">权威自测</span></a>
+      <a class="nav-link flex items-center gap-3 px-card-inner-padding py-3 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="safety" href="safety.html"><span class="material-symbols-outlined text-[20px]">support_agent</span><span class="font-label-md text-label-md">安全与帮助</span></a>
+    </nav>
+  </div>
+  <div class="flex flex-col gap-stack-gap">
+    <div class="h-[1px] w-full bg-surface-container-high/60"></div>
+    <nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-full">
+      <a class="nav-link flex items-center gap-3 px-card-inner-padding py-2.5 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="compliance-privacy" href="privacy.html"><span class="material-symbols-outlined text-[20px]">verified_user</span><span class="font-label-md text-label-md">隐私与合规</span></a>
+      <a class="nav-link flex items-center gap-3 px-card-inner-padding py-2.5 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="profile" href="profile.html"><span class="material-symbols-outlined text-[20px]">account_circle</span><span class="font-label-md text-label-md">个人中心</span></a>
+    </nav>
+    <div class="px-card-inner-padding py-2 flex items-center justify-between text-on-surface-variant/60 font-label-md text-[12px]"><span>心境平伏 呼吸自然</span><span class="material-symbols-outlined text-[16px] text-primary">spa</span></div>
+  </div>
+</aside>
+<div class="jy-main-wrap pl-72">
+<header class="jy-header fixed top-0 left-72 right-0 h-16 bg-surface/75 backdrop-blur-xl shadow-[0_1px_8px_rgba(28,107,80,0.03)] z-40 flex items-center justify-between px-section-gap">
+  <div class="flex items-center gap-stack-gap">
+    <a href="index.html" onclick="if(window.JY&amp;&amp;JY.goBack){JY.goBack(event);}else{location.href='index.html';}" class="group flex items-center justify-center w-9 h-9 -ml-2 mr-1 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-primary transition-all" aria-label="返回上一级" title="返回"><span class="material-symbols-outlined text-[22px]">arrow_back</span></a>
+    <img alt="静一下心 品牌标志" class="h-8 w-auto object-contain" src="assets/logo.png"/>
+    <span class="font-headline-md text-body-md text-on-surface font-medium hidden sm:inline">静一下心</span>
+  </div>
+  <div class="flex items-center gap-4">
+    <div class="flex items-center bg-surface-container-low px-4 py-1.5 rounded-full text-on-surface-variant"><span class="material-symbols-outlined text-[18px] text-primary mr-2">spa</span><span class="font-label-md text-label-md text-on-surface-variant">身心处于平缓状态</span></div>
+  </div>
+</header>
+<main class="w-full pt-16 bg-surface min-h-screen px-section-gap py-container-padding">
+  <div class="flex flex-col w-full">
+    <div class="mb-section-gap">
+      <h1 class="font-headline-lg text-headline-lg text-on-surface">隐私与合规</h1>
+      <p class="font-body-md text-body-md text-on-surface-variant text-sm mt-1">你的情绪只属于你。下面说明数据如何被保护，以及你能拥有的权利。</p>
+    </div>
+    <!-- Encryption ribbon -->
+    <div class="mb-section-gap w-full rounded-lg bg-surface-container-lowest/90 backdrop-blur-md p-card-inner-padding shadow-[0_4px_24px_rgba(28,107,80,0.06)] flex flex-col md:flex-row items-start md:items-center justify-between gap-4 relative overflow-hidden">
+      <div class="absolute -right-8 -top-8 w-40 h-40 bg-primary-container/20 rounded-full blur-2xl pointer-events-none"></div>
+      <div class="flex items-center gap-4 relative z-10">
+        <div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed shrink-0 shadow-sm"><span class="material-symbols-outlined text-[22px]">lock</span></div>
+        <div>
+          <div class="flex items-center gap-2">
+            <span class="font-headline-md text-label-md text-primary font-semibold tracking-wide">本地端到端加密保护</span>
+            <span class="font-label-md text-label-md bg-secondary-container/50 text-on-secondary-container px-2.5 py-0.5 rounded-full text-xs">零云端归档</span>
+          </div>
+          <p class="font-body-md text-body-md text-on-surface-variant text-sm mt-0.5">所有情绪轨迹与私密随笔仅存于本设备本地数据库，任何他人及平台均无权查阅或解密。</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-2 text-on-surface-variant text-xs font-label-md self-end md:self-center shrink-0"><span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span><span>AES-256 本地密钥已激活</span></div>
+    </div>
+    <!-- Info grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-section-gap">
+      <section class="rounded-lg bg-surface-container-lowest p-card-inner-padding shadow-[0_12px_36px_rgba(28,107,80,0.05)]">
+        <div class="flex items-center gap-2 mb-3"><span class="material-symbols-outlined text-primary">shield</span><h3 class="font-headline-md text-body-md text-on-surface font-semibold">我们如何保护数据</h3></div>
+        <ul class="flex flex-col gap-2 font-body-md text-body-md text-on-surface-variant text-sm list-disc pl-5">
+          <li>数据使用设备本地 AES-256 密钥加密后存储，离开设备即不可用。</li>
+          <li>不设立云端账号，也不上传任何情绪或随笔内容。</li>
+          <li>卸载应用将一并清除本地加密库，不留残余。</li>
+        </ul>
+      </section>
+      <section class="rounded-lg bg-surface-container-lowest p-card-inner-padding shadow-[0_12px_36px_rgba(28,107,80,0.05)]">
+        <div class="flex items-center gap-2 mb-3"><span class="material-symbols-outlined text-primary">dataset</span><h3 class="font-headline-md text-body-md text-on-surface font-semibold">收集与不收集</h3></div>
+        <div class="flex flex-col gap-3 text-sm">
+          <div><span class="font-label-md text-label-md text-primary font-semibold">仅本地保存：</span><span class="font-body-md text-body-md text-on-surface-variant">焦虑自评、情绪标签、一句反思、练习记录。</span></div>
+          <div><span class="font-label-md text-label-md text-error font-semibold">绝不收集：</span><span class="font-body-md text-body-md text-on-surface-variant">真实姓名、手机号、健康诊断结论、位置或云端同步。</span></div>
+        </div>
+      </section>
+      <section class="rounded-lg bg-surface-container-lowest p-card-inner-padding shadow-[0_12px_36px_rgba(28,107,80,0.05)]">
+        <div class="flex items-center gap-2 mb-3"><span class="material-symbols-outlined text-primary">balance</span><h3 class="font-headline-md text-body-md text-on-surface font-semibold">你的权利</h3></div>
+        <ul class="flex flex-col gap-2 font-body-md text-body-md text-on-surface-variant text-sm list-disc pl-5">
+          <li>随时导出全部本地记录，带走属于你的数据。</li>
+          <li>一键清除本地数据库，操作不可恢复。</li>
+          <li>可关闭所有本地分析与趋势展示。</li>
+        </ul>
+      </section>
+      <section class="rounded-lg bg-surface-container-lowest p-card-inner-padding shadow-[0_12px_36px_rgba(28,107,80,0.05)]">
+        <div class="flex items-center gap-2 mb-3"><span class="material-symbols-outlined text-primary">health_and_safety</span><h3 class="font-headline-md text-body-md text-on-surface font-semibold">合规定位</h3></div>
+        <p class="font-body-md text-body-md text-on-surface-variant text-sm leading-relaxed">静一下定位为通用身心健康（General Wellness）辅助工具，<strong class="text-on-surface">不提供医疗诊断、不替代专业治疗</strong>。若你正经历持续或加重的焦虑，请寻求执业医师或专业机构帮助。</p>
+      </section>
+    </div>
+    <!-- Crisis support -->
+    <section class="rounded-lg bg-gradient-to-r from-error-container/40 via-surface-container-lowest to-secondary-container/30 p-card-inner-padding shadow-[0_8px_24px_rgba(28,107,80,0.04)] flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-4">
+        <span class="w-12 h-12 rounded-full bg-error text-on-error flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-[24px]">support_agent</span></span>
+        <div>
+          <h4 class="font-headline-md text-body-md text-on-surface font-semibold">需要立刻有人接住你</h4>
+          <p class="font-body-md text-body-md text-xs text-on-surface-variant mt-0.5">若正经历紧急危险，请立即拨打当地急救 <strong class="text-error">120</strong> 或报警 <strong class="text-error">110</strong>；也可在「安全与帮助」中按所在地区查找心理援助热线。</p>
+        </div>
+      </div>
+      <a href="safety.html" class="px-5 py-2.5 rounded-full bg-surface-container-lowest hover:bg-surface text-primary font-label-md text-label-md font-semibold shadow-xs transition-colors shrink-0">查看安全与帮助</a>
+    </section>
+  </div>
+</main>
+</div>
+<script>
+  (function(){ const cur=location.pathname.split('/').pop()||'page.html'; const map={'index.html':'overview','toolbox.html':'toolbox','breathing-space.html':'breathing-space','mood.html':'mood-and-insights','science.html':'science-basis','knowledge.html':'knowledge','assessment.html':'assessment','safety.html':'safety','privacy.html':'compliance-privacy','profile.html':'profile'}; const ap=map[cur]; document.querySelectorAll('aside nav a.nav-link').forEach(a=>{ if(a.dataset.path===ap){ a.classList.add('bg-primary-container','text-on-primary-container','font-semibold'); a.classList.remove('text-on-surface-variant'); a.setAttribute('aria-current','page'); } }); })();
+</script>
+</body>
+</html>

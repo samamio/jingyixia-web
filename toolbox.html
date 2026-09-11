@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>静一下心 · 疗愈工具箱</title>
+<link rel="icon" href="assets/logo.png"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link rel="stylesheet" href="assets/styles.css"/>
+<script src="assets/nav.js"></script>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="assets/tailwind-setup.js"></script>
+</head>
+<body class="bg-background font-body-md text-body-md text-on-surface antialiased">
+<aside class="jy-sidebar fixed left-0 top-0 h-screen w-72 bg-surface-container-lowest/80 backdrop-blur-xl z-50 flex flex-col justify-between p-container-padding shadow-[0_1px_12px_rgba(28,107,80,0.05)]">
+  <div class="flex flex-col gap-stack-gap">
+    <div class="flex items-center gap-stack-gap px-card-inner-padding py-2">
+      <img alt="静一下心 品牌标志" class="h-8 w-auto object-contain" src="assets/logo.png"/>
+      <div class="flex flex-col"><span class="font-headline-md text-body-lg text-primary tracking-tight font-semibold">静一下心</span><span class="font-label-md text-label-md text-on-surface-variant opacity-80 text-[12px] leading-tight">科学缓解焦虑</span></div>
+    </div>
+    <div class="h-[1px] w-full bg-surface-container-high/60 my-1"></div>
+    <nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-full">
+      <a class="nav-link flex items-center gap-3 px-card-inner-padding py-3 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="overview" href="index.html"><span class="material-symbols-outlined text-[20px]">cottage</span><span class="font-label-md text-label-md">首页</span></a>
+      <a class="nav-link flex items-center gap-3 px-card-inner-padding py-3 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="toolbox" href="toolbox.html"><span class="material-symbols-outlined text-[20px]">self_improvement</span><span class="font-label-md text-label-md">疗愈工具箱</span></a>
+      <a class="nav-link flex items-center gap-3 px-card-inner-padding py-3 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="mood-and-insights" href="mood.html"><span class="material-symbols-outlined text-[20px]">auto_graph</span><span class="font-label-md text-label-md">情绪日志</span></a>
+      <a class="nav-link flex items-center gap-3 px-card-inner-padding py-3 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="science-basis" href="science.html"><span class="material-symbols-outlined text-[20px]">psychology</span><span class="font-label-md text-label-md">科学依据</span></a>
+      <a class="nav-link flex items-center gap-3 px-card-inner-padding py-3 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="knowledge" href="knowledge.html"><span class="material-symbols-outlined text-[20px]">menu_book</span><span class="font-label-md text-label-md">焦虑知识库</span></a>
+      <a class="nav-link flex items-center gap-3 px-card-inner-padding py-3 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="assessment" href="assessment.html"><span class="material-symbols-outlined text-[20px]">quiz</span><span class="font-label-md text-label-md">权威自测</span></a>
+      <a class="nav-link flex items-center gap-3 px-card-inner-padding py-3 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="safety" href="safety.html"><span class="material-symbols-outlined text-[20px]">support_agent</span><span class="font-label-md text-label-md">安全与帮助</span></a>
+    </nav>
+  </div>
+  <div class="flex flex-col gap-stack-gap">
+    <div class="h-[1px] w-full bg-surface-container-high/60"></div>
+    <nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-full">
+      <a class="nav-link flex items-center gap-3 px-card-inner-padding py-2.5 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="compliance-privacy" href="privacy.html"><span class="material-symbols-outlined text-[20px]">verified_user</span><span class="font-label-md text-label-md">隐私与合规</span></a>
+      <a class="nav-link flex items-center gap-3 px-card-inner-padding py-2.5 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="profile" href="profile.html"><span class="material-symbols-outlined text-[20px]">account_circle</span><span class="font-label-md text-label-md">个人中心</span></a>
+    </nav>
+    <div class="px-card-inner-padding py-2 flex items-center justify-between text-on-surface-variant/60 font-label-md text-[12px]"><span>心境平伏 呼吸自然</span><span class="material-symbols-outlined text-[16px] text-primary">spa</span></div>
+  </div>
+</aside>
+<div class="jy-main-wrap pl-72">
+<header class="jy-header fixed top-0 left-72 right-0 h-16 bg-surface/75 backdrop-blur-xl shadow-[0_1px_8px_rgba(28,107,80,0.03)] z-40 flex items-center justify-between px-section-gap">
+  <div class="flex items-center gap-stack-gap">
+    <a href="index.html" onclick="if(window.JY&amp;&amp;JY.goBack){JY.goBack(event);}else{location.href='index.html';}" class="group flex items-center justify-center w-9 h-9 -ml-2 mr-1 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-primary transition-all" aria-label="返回上一级" title="返回"><span class="material-symbols-outlined text-[22px]">arrow_back</span></a>
+    <img alt="静一下心 品牌标志" class="h-8 w-auto object-contain" src="assets/logo.png"/>
+    <span class="font-headline-md text-body-md text-on-surface font-medium hidden sm:inline">静一下心</span>
+  </div>
+  <div class="flex items-center gap-4">
+    <div class="flex items-center bg-surface-container-low px-4 py-1.5 rounded-full text-on-surface-variant"><span class="material-symbols-outlined text-[18px] text-primary mr-2">spa</span><span class="font-label-md text-label-md text-on-surface-variant">身心处于平缓状态</span></div>
+  </div>
+</header>
+<main class="w-full pt-16 bg-surface min-h-screen px-section-gap py-container-padding">
+  <div class="flex flex-col w-full">
+    <div class="mb-section-gap">
+      <h1 class="font-headline-lg text-headline-lg text-on-surface">疗愈工具箱</h1>
+      <p class="font-body-md text-body-md text-on-surface-variant text-sm mt-1">按此刻需要挑选练习：专注、呼吸、放松、即刻着陆、微小行动或睡眠。点「开始练习」即可在上面交互进行。</p>
+    </div>
+    <!-- Filter pills -->
+    <div class="flex flex-wrap items-center gap-2 mb-section-gap" id="filter-pills">
+      <button data-filter="all" class="px-4 py-2 rounded-full bg-primary-container text-on-primary-container font-semibold font-label-md text-label-md transition-all" type="button">全部</button>
+      <button data-filter="focus" class="px-4 py-2 rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container font-label-md text-label-md transition-all" type="button">专注力训练</button>
+      <button data-filter="breath" class="px-4 py-2 rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container font-label-md text-label-md transition-all" type="button">节律呼吸</button>
+      <button data-filter="relax" class="px-4 py-2 rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container font-label-md text-label-md transition-all" type="button">躯体放松</button>
+      <button data-filter="sos" class="px-4 py-2 rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container font-label-md text-label-md transition-all" type="button">即刻疗愈·SOS</button>
+      <button data-filter="sleep" class="px-4 py-2 rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container font-label-md text-label-md transition-all" type="button">睡眠</button>
+    </div>
+    <!-- Tool cards -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-section-gap" id="tool-grid"></div>
+    <!-- Quick assessment CTA -->
+    <section class="rounded-lg bg-gradient-to-r from-primary/10 via-surface-container-lowest to-secondary/10 p-card-inner-padding shadow-[0_8px_24px_rgba(28,107,80,0.04)] flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-4">
+        <span class="w-12 h-12 rounded-full bg-primary text-on-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-[24px]">bolt</span></span>
+        <div>
+          <h4 class="font-headline-md text-body-md text-on-surface font-semibold">不知道从哪开始？</h4>
+          <p class="font-body-md text-body-md text-xs text-on-surface-variant mt-0.5">回到首页「让我静一下」，按此刻状态挑一个练习。</p>
+        </div>
+      </div>
+      <a href="index.html#calm" class="px-5 py-2.5 rounded-full bg-surface-container-lowest hover:bg-surface text-primary font-label-md text-label-md font-semibold shadow-xs transition-colors shrink-0">让我静一下</a>
+    </section>
+  </div>
+</main>
+</div>
+
+<!-- Interactive exercise modal -->
+<div id="tool-modal" class="fixed inset-0 z-[100] bg-on-surface/40 backdrop-blur-sm hidden items-center justify-center p-4">
+  <div class="rounded-lg bg-surface-container-lowest shadow-[0_20px_60px_rgba(0,0,0,0.2)] max-w-lg w-full max-h-[85vh] flex flex-col">
+    <div class="flex items-center justify-between p-card-inner-padding border-b border-surface-container-low shrink-0">
+      <span id="tool-modal-title" class="font-headline-md text-body-md text-on-surface font-semibold">练习</span>
+      <button id="tool-modal-close" class="w-9 h-9 rounded-full hover:bg-surface-container flex items-center justify-center text-on-surface-variant" aria-label="关闭"><span class="material-symbols-outlined">close</span></button>
+    </div>
+    <div id="tool-modal-body" class="p-card-inner-padding overflow-y-auto"></div>
+  </div>
+</div>
+
+<script>
+  const TOOLS = [
+    { key:'schulte', name:'动态舒尔特方格', cat:'focus', icon:'grid_view', color:'secondary-container/50', onSecondary:true, desc:'在数字矩阵中按顺序搜寻目标，把注意力从杂念拉回眼前。' },
+    { key:'breathing', name:'呼吸训练', cat:'breath', icon:'air', color:'primary-container/50', onPrimary:true, desc:'在弹窗里跟随光环做节律呼吸，延长呼气激活副交感神经。' },
+    { key:'grounding', name:'54321 练习', cat:'sos', icon:'visibility', color:'tertiary-fixed', onTertiary:true, desc:'用五感逐级锚定当下，快速从惊恐或强烈反刍中抽离。' },
+    { key:'pmr', name:'身体放松', cat:'relax', icon:'fitness_center', color:'secondary-container/50', onSecondary:true, desc:'依次绷紧再放松肌群，体会紧张与松弛的对照，卸下身体负担。' },
+    { key:'stroop', name:'Stroop 训练', cat:'focus', icon:'style', color:'tertiary-fixed', onTertiary:true, desc:'读出字色的颜色而非字义，锻炼抑制控制，打断自动化焦虑。' },
+    { key:'tiny', name:'微小行动', cat:'sos', icon:'emoji_objects', color:'secondary-container/50', onSecondary:true, desc:'从一件极小、马上能完成的事开始，让行动带动情绪。' },
+    { key:'rumination', name:'反刍打断', cat:'sos', icon:'psychology', color:'primary-container/50', onPrimary:true, desc:'把盘旋的念头写下来并判断能否解决，打断反复回放。' },
+    { key:'sleep', name:'睡前放松', cat:'sleep', icon:'bedtime', color:'primary-container/50', onPrimary:true, desc:'睡前把呼吸放慢、身体松开，为入睡做准备。' },
+    { key:'sleepmind', name:'睡前思绪整理', cat:'sleep', icon:'edit_note', color:'tertiary-fixed', onTertiary:true, desc:'把脑子里转的事写下来，判断今晚要不要解决。' }
+  ];
+  const catLabel = { focus:'专注力训练', breath:'节律呼吸', relax:'躯体放松', sos:'即刻疗愈·SOS', sleep:'睡眠' };
+  const iconBg = { onPrimary:'bg-primary-container/50', onSecondary:'bg-secondary-container/50', onTertiary:'bg-tertiary-fixed' };
+  const iconFg = { onPrimary:'text-primary', onSecondary:'text-on-secondary-container', onTertiary:'text-on-tertiary-fixed' };
+
+  // ---- modal infra ----
+  const modal = document.getElementById('tool-modal');
+  const modalBody = document.getElementById('tool-modal-body');
+  const modalTitle = document.getElementById('tool-modal-title');
+  let timers = [];
+  function clearTimers(){ timers.forEach(t => { try { clearInterval(t); clearTimeout(t); } catch(e){} }); timers = []; }
+  function showModal(title, html){ modalTitle.textContent = title; modalBody.innerHTML = html; modal.classList.remove('hidden'); modal.classList.add('flex'); document.body.style.overflow = 'hidden'; }
+  function hideModal(){ clearTimers(); modal.classList.add('hidden'); modal.classList.remove('flex'); document.body.style.overflow = ''; }
+  document.getElementById('tool-modal-close').addEventListener('click', hideModal);
+  modal.addEventListener('click', e => { if(e.target === modal) hideModal(); });
+
+  function fmt(s){ return String(Math.floor(s/60)).padStart(2,'0') + ':' + String(Math.floor(s%60)).padStart(2,'0'); }
+  function esc(s){ return (s||'').replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[c])); }
+  function shuffle(a){ for(let i=a.length-1;i>0;i--){ const j=Math.random()*(i+1)|0; const x=a[i]; a[i]=a[j]; a[j]=x; } return a; }
+
+  // breathing pacer (reused by sleep / breathing)
+  function startPacer(mount, inhale, exhale){
+    mount.innerHTML = '<div class="relative w-36 h-36 mx-auto my-4 flex items-center justify-center"><div id="pc" class="w-24 h-24 rounded-full bg-primary" style="transform:scale(0.6);transition:transform 1s ease-in-out"></div></div><div id="pl" class="text-center text-primary font-semibold">准备</div>';
+    let phase='in', sec=inhale;
+    mount.querySelector('#pl').textContent = '吸气 ' + sec;
+    const iv = setInterval(() => {
+      sec--;
+      if(sec<=0){
+        if(phase==='in'){ phase='out'; sec=exhale; mount.querySelector('#pc').style.transform='scale(1)'; mount.querySelector('#pl').textContent='呼气 '+sec; }
+        else { phase='in'; sec=inhale; mount.querySelector('#pc').style.transform='scale(0.6)'; mount.querySelector('#pl').textContent='吸气 '+sec; }
+      } else { mount.querySelector('#pl').textContent = (phase==='in'?'吸气 ':'呼气 ')+sec; }
+    }, 1000);
+    timers.push(iv);
+  }
+
+  // ---- per-tool exercises ----
+  function openSchulte(){
+    const N = 25;
+    let order = shuffle([...Array(N)].map((_,i)=>i+1));
+    let next = 1, mistakes = 0, iv = null; const t0 = Date.now();
+    modalBody.innerHTML =
+      '<p class="font-body-md text-body-md text-on-surface-variant text-sm mb-3">按顺序点击 1 → 25，把注意力放在数字上。走神了没关系，重新开始即可。</p>' +
+      '<div class="flex items-center gap-4 mb-3 text-sm"><span>下一个：<b id="sc-next" class="text-primary text-lg font-bold">1</b></span><span id="sc-time" class="text-on-surface-variant tabular-nums">00:00</span><span id="sc-err" class="text-error"></span></div>' +
+      '<div id="sc-grid" class="grid grid-cols-5 gap-2"></div>' +
+      '<button id="sc-restart" class="mt-4 px-5 py-2.5 rounded-full bg-surface-container-low text-on-surface-variant font-label-md text-label-md font-semibold hover:bg-surface-container transition-all">重新开始</button>';
+    const grid = document.getElementById('sc-grid');
+    order.forEach(v => {
+      const b = document.createElement('button');
+      b.textContent = v;
+      b.className = 'aspect-square rounded-xl bg-surface-container-low text-on-surface font-semibold text-lg hover:bg-surface-container transition-all';
+      b.onclick = () => {
+        if(v === next){
+          b.style.background = '#1c6b50'; b.style.color = '#ffffff'; b.style.border = 'none'; b.disabled = true;
+          next++;
+          if(next > N){
+            const nx = document.getElementById('sc-next'); if(nx) nx.textContent = '完成 ✓'; if(window.JY && JY.recordPractice){JY.recordPractice('schulte');}
+            const tm = document.getElementById('sc-time'); if(tm) tm.innerHTML = '用时 <b>' + ((Date.now()-t0)/1000).toFixed(1) + '</b> 秒';
+            const er = document.getElementById('sc-err'); if(er) er.textContent = mistakes ? ('顺序点错 '+mistakes+' 次') : '一次都没点错，专注得很好';
+            if(iv) clearInterval(iv);
+          } else {
+            const nx = document.getElementById('sc-next'); if(nx) nx.textContent = next;
+          }
+        } else {
+          mistakes++; const er = document.getElementById('sc-err'); if(er) er.textContent = '该点 '+next+'，已错 '+mistakes+' 次';
+          b.classList.add('bg-error-container'); setTimeout(()=>b.classList.remove('bg-error-container'), 300);
+        }
+      };
+      grid.appendChild(b);
+    });
+    iv = setInterval(() => { if(next <= N){ const s = Math.floor((Date.now()-t0)/1000); const tm = document.getElementById('sc-time'); if(tm) tm.textContent = fmt(s); } }, 500);
+    timers.push(iv);
+    document.getElementById('sc-restart').onclick = openSchulte;
+  }
+
+  function openGrounding(){
+    const senses = [['看',5],['摸',4],['听',3],['闻',2],['尝',1]];
+    let i = 0, done = 0;
+    function finish(){ if(window.JY && JY.recordPractice){JY.recordPractice('grounding');} modalBody.innerHTML = '<h3 class="font-headline-md text-body-md text-on-surface font-semibold mb-2">完成</h3><p class="font-body-md text-body-md text-on-surface-variant text-sm">你刚刚把注意力拉回了此刻的感官。这就是打断反刍的开始。</p>'; }
+    function render(){
+      const name = senses[i][0], n = senses[i][1];
+      modalBody.innerHTML =
+        '<p class="font-body-md text-body-md text-on-surface-variant text-sm mb-2">用你的 <b class="text-on-surface">'+name+'</b> 感官，找出 <b class="text-primary text-lg font-bold">'+n+'</b> 样你能'+name+'到的东西。</p>' +
+        '<div class="text-3xl font-bold text-primary mb-3"><span id="g-done">'+done+'</span> / '+n+'</div>' +
+        '<div class="flex flex-wrap gap-3">' +
+          '<button id="g-add" class="px-5 py-2.5 rounded-full bg-primary text-on-primary font-label-md text-label-md font-semibold transition-all">+1 找到了</button>' +
+          '<button id="g-skip" class="px-5 py-2.5 rounded-full bg-surface-container-low text-on-surface-variant font-label-md text-label-md font-semibold transition-all">跳过</button>' +
+          (i>0 ? '<button id="g-prev" class="px-5 py-2.5 rounded-full bg-surface-container-low text-on-surface-variant font-label-md text-label-md font-semibold transition-all">上一步</button>' : '') +
+        '</div>';
+      document.getElementById('g-add').onclick = () => { done++; if(done >= n){ i++; done = 0; if(i >= senses.length) finish(); else render(); } else { const d = document.getElementById('g-done'); if(d) d.textContent = done; } };
+      document.getElementById('g-skip').onclick = () => { i++; done = 0; if(i >= senses.length) finish(); else render(); };
+      if(i > 0) document.getElementById('g-prev').onclick = () => { i--; done = 0; render(); };
+    }
+    render();
+  }
+
+  function openPmr(){
+    const groups = ['脚和脚趾','小腿','大腿','腹部','双手','肩膀','脸'];
+    let pi = 0;
+    function render(){
+      const total = groups.length;
+      modalBody.innerHTML =
+        '<div class="text-xs text-on-surface-variant mb-2">第 '+(pi+1)+' / '+total+' 组 · '+groups[pi]+'</div>' +
+        '<div class="h-1.5 rounded-full bg-surface-container-low mb-4 overflow-hidden"><div class="h-full bg-primary rounded-full transition-all" style="width:'+Math.round((pi/total)*100)+'%"></div></div>' +
+        '<p class="font-body-md text-body-md text-on-surface text-sm mb-4">先用力绷紧 <b>'+groups[pi]+'</b> 5 秒，然后突然松开，体会松弛与温热。</p>' +
+        '<button id="pm-tense" class="px-5 py-2.5 rounded-full bg-primary text-on-primary font-label-md text-label-md font-semibold transition-all">绷紧 5 秒</button>' +
+        '<button id="pm-next" class="ml-3 px-5 py-2.5 rounded-full bg-surface-container-low text-on-surface-variant font-label-md text-label-md font-semibold transition-all hidden">松开后，下一组</button>';
+      document.getElementById('pm-tense').onclick = () => {
+        const b = document.getElementById('pm-tense'); b.disabled = true; let s = 5; b.textContent = '绷紧中 '+s;
+        const iv = setInterval(() => {
+          s--;
+          if(s <= 0){ clearInterval(iv); b.textContent = '现在松开'; const nx = document.getElementById('pm-next'); if(nx) nx.classList.remove('hidden'); }
+          else b.textContent = '绷紧中 '+s;
+        }, 1000);
+        timers.push(iv);
+      };
+      document.getElementById('pm-next').onclick = () => {
+        pi++;
+        if(pi >= total){
+          modalBody.innerHTML =
+            '<p class="font-headline-md text-body-md text-on-surface font-semibold text-base">完成</p>' +
+            '<p class="font-body-md text-body-md text-on-surface-variant text-sm mt-2">感受一下肌肉的温热与沉重——从脚趾到肩膀都松开了。这就是放松。</p>' +
+            '<button id="pm-again" class="mt-3 px-5 py-2.5 rounded-full bg-primary-container text-on-primary-container font-label-md text-label-md font-semibold transition-all">再做一次</button>'; if(window.JY && JY.recordPractice){JY.recordPractice('pmr');}
+          document.getElementById('pm-again').onclick = openPmr;
+        } else render();
+      };
+    }
+    render();
+  }
+
+  function openStroop(){
+    modalBody.innerHTML = '<p class="font-body-md text-body-md text-on-surface-variant text-sm mb-3">读出字的 <b class="text-on-surface">颜色</b>（不是字义）。越快越准，做 8 题。</p><div id="st-area"></div>';
+    const words = ['红','蓝','绿','黄'];
+    const cols = [['红','#e23b3b'],['蓝','#2f6fde'],['绿','#1aa05a'],['黄','#e0a800']];
+    let round = 0, correct = 0;
+    function next(){
+      const area = document.getElementById('st-area'); if(!area) return;
+      if(round >= 8){ area.innerHTML = '<p class="font-body-md text-body-md text-on-surface text-sm">完成 8 题，答对 <b class="text-primary">'+correct+'</b> / 8 题。</p>' + (function(){ if(window.JY && JY.recordPractice){JY.recordPractice('stroop');} return ''; })() + '<button id="st-again" class="mt-3 px-5 py-2.5 rounded-full bg-surface-container-low text-on-surface-variant font-label-md text-label-md font-semibold hover:bg-surface-container transition-all">再做一次</button>'; document.getElementById('st-again').onclick = openStroop; return; }
+      const w = words[Math.random()*4|0]; const ink = cols[Math.random()*4|0];
+      area.innerHTML =
+        '<p class="font-body-md text-body-md text-on-surface-variant text-sm mb-2">第 '+(round+1)+' / 8 题</p>' +
+        '<div class="text-5xl font-bold my-4" style="color:'+ink[1]+'">'+w+'</div>' +
+        '<div class="grid grid-cols-2 gap-2">' + cols.map(c => '<button class="st-btn flex items-center justify-center gap-2 px-4 py-3 rounded-full bg-surface-container-low text-on-surface-variant font-label-md text-label-md font-semibold transition-all" data-c="'+c[0]+'"><span class="w-3 h-3 rounded-full" style="background:'+c[1]+'"></span>'+c[0]+'</button>').join('') + '</div>';
+      area.querySelectorAll('.st-btn').forEach(b => b.onclick = () => { if(b.dataset.c === ink[0]) correct++; round++; next(); });
+    }
+    next();
+  }
+
+  function openTiny(){
+    modalBody.innerHTML =
+      '<p class="font-body-md text-body-md text-on-surface-variant text-sm mb-3">从一件 5 分钟内能完成的事开始。先写下来，再开始计时。</p>' +
+      '<input id="ty-act" placeholder="例如：喝一杯水 / 站起伸个懒腰" class="w-full bg-surface-container-low rounded-DEFAULT px-3 py-2 text-sm mb-3 focus:outline-none"/>' +
+      '<div class="flex items-center gap-3">' +
+        '<button id="ty-start" class="px-5 py-2.5 rounded-full bg-primary text-on-primary font-label-md text-label-md font-semibold transition-all">开始 5 分钟计时</button>' +
+        '<span id="ty-t" class="font-headline-md text-headline-md text-primary font-bold tabular-nums">05:00</span>' +
+      '</div>' +
+      '<p id="ty-done" class="font-body-md text-body-md text-primary mt-3 hidden">时间到。做得好——完成比质量重要。</p>';
+    let left = 300, iv = null;
+    document.getElementById('ty-start').onclick = () => {
+      if(!document.getElementById('ty-act').value.trim()){ alert('先写一件小事'); return; }
+      if(iv) return;
+      iv = setInterval(() => {
+        left--; document.getElementById('ty-t').textContent = fmt(left);
+        if(left <= 0){ clearInterval(iv); const d = document.getElementById('ty-done'); if(d){ d.classList.remove('hidden'); if(window.JY && JY.recordPractice){JY.recordPractice('tiny');} } }
+      }, 1000);
+      timers.push(iv);
+    };
+  }
+
+  function openRumination(){
+    modalBody.innerHTML =
+      '<p class="font-body-md text-body-md text-on-surface-variant text-sm mb-3">写下此刻反复出现的念头（不必工整）：</p>' +
+      '<textarea id="rm-text" rows="3" class="w-full bg-surface-container-low rounded-DEFAULT px-3 py-2 text-sm mb-3 focus:outline-none" placeholder="此刻一直绕回来的念头…"></textarea>' +
+      '<button id="rm-next" class="px-5 py-2.5 rounded-full bg-primary text-on-primary font-label-md text-label-md font-semibold transition-all">下一步</button>';
+    document.getElementById('rm-next').onclick = () => {
+      const t = document.getElementById('rm-text').value.trim(); if(!t){ alert('先写下来'); return; }
+      modalBody.innerHTML =
+        '<p class="font-body-md text-body-md text-on-surface-variant text-sm mb-2">关于「<b class="text-on-surface">'+esc(t)+'</b>」：</p>' +
+        '<p class="font-headline-md text-body-md text-on-surface mb-4">现在能解决吗？</p>' +
+        '<div class="flex flex-wrap gap-3">' +
+          '<button id="rm-yes" class="px-5 py-2.5 rounded-full bg-primary-container text-on-primary-container font-label-md text-label-md font-semibold transition-all">能，定个最小行动</button>' +
+          '<button id="rm-no" class="px-5 py-2.5 rounded-full bg-surface-container-low text-on-surface-variant font-label-md text-label-md font-semibold transition-all">不能，先放一放</button>' +
+        '</div>';
+      document.getElementById('rm-yes').onclick = () => {
+        modalBody.innerHTML =
+          '<p class="font-body-md text-body-md text-on-surface-variant text-sm mb-3">把「<b class="text-on-surface">'+esc(t)+'</b>」拆成一个最小行动：</p>' +
+          '<input id="rm-act" placeholder="例如：发一条消息确认" class="w-full bg-surface-container-low rounded-DEFAULT px-3 py-2 text-sm mb-3 focus:outline-none"/>' +
+          '<button id="rm-done" class="px-5 py-2.5 rounded-full bg-primary text-on-primary font-label-md text-label-md font-semibold transition-all">记下</button>';
+        document.getElementById('rm-done').onclick = () => { const a = document.getElementById('rm-act').value.trim(); modalBody.innerHTML = '<p class="font-body-md text-body-md text-on-surface text-sm">已记下：<b>'+esc(a||'先做一步')+'</b>。去做这一步，剩下的交给时间。</p>'; if(window.JY && JY.recordPractice){JY.recordPractice('rumination');} };
+      };
+      document.getElementById('rm-no').onclick = () => {
+        modalBody.innerHTML =
+          '<p class="font-body-md text-body-md text-on-surface-variant text-sm mb-3">不能解决就先放下。打开「54321 练习」把注意力拉回此刻的感官：</p>' +
+          '<ul class="list-decimal pl-5 font-body-md text-body-md text-on-surface-variant text-sm mb-3"><li>看 5 样你能看到的东西</li><li>摸 4 样你能摸到的</li><li>听 3 样你能听到的</li><li>闻 2 样你能闻到的</li><li>尝 1 样你能尝到的</li></ul>' +
+          '<button id="rm-go" class="px-5 py-2.5 rounded-full bg-primary text-on-primary font-label-md text-label-md font-semibold transition-all">去做 54321</button>';
+        document.getElementById('rm-go').onclick = () => { if(window.JY && JY.recordPractice){JY.recordPractice('rumination');} openGrounding(); };
+      };
+    };
+  }
+
+    function openSleep(){
+    const steps = ['脚趾','脚','小腿','大腿','腹部','双手','肩膀','脸'];
+    modalBody.innerHTML =
+      '<p class="font-body-md text-body-md text-on-surface-variant text-sm mb-2">上床前让呼吸慢下来：吸气 4 秒，呼气 6 秒。跟着光环做几轮，再逐段松开身体。</p>' +
+      '<div id="sl-pacer"></div>' +
+      '<p class="font-headline-md text-body-md text-on-surface font-semibold text-sm mt-3 mb-2">身体扫描：从脚趾到头顶，每段「已松开」就点一下</p>' +
+      '<div id="sl-list" class="flex flex-col gap-2 mb-3"></div>' +
+      '<p class="font-body-md text-body-md text-on-surface-variant text-sm">把「必须睡着」换成「让身体休息」。约 20 分钟仍清醒，就起来到昏暗处坐坐。</p>';
+    startPacer(document.getElementById('sl-pacer'), 4, 6);
+    const list = document.getElementById('sl-list');
+    steps.forEach(s => {
+      const row = document.createElement('button');
+      row.className = 'flex items-center justify-between bg-surface-container-low rounded-DEFAULT px-3 py-2 text-left transition-all';
+      row.innerHTML = '<span class="font-body-md text-body-md text-on-surface text-sm">'+s+'</span><span class="text-xs px-3 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md">已松开</span>';
+      row.onclick = () => {
+        row.classList.add('bg-primary-container/40');
+        const tag = row.querySelector('span:last-child');
+        tag.textContent = '已松开 ✓'; tag.className = 'text-xs px-3 py-1 rounded-full bg-primary-container text-on-primary-container font-label-md text-label-md';
+        row.disabled = true;
+        if(list.querySelectorAll('button:disabled').length >= steps.length){
+          const done = document.createElement('p');
+          done.className = 'font-headline-md text-body-md text-primary text-sm mt-2 font-semibold';
+          done.textContent = '全身都松开了，安心休息吧。'; if(window.JY && JY.recordPractice){JY.recordPractice('sleep');}
+          list.parentElement.appendChild(done);
+        }
+      };
+      list.appendChild(row);
+    });
+  }
+function openSleepmind(){
+    modalBody.innerHTML =
+      '<p class="font-body-md text-body-md text-on-surface-variant text-sm mb-3">把脑子里转的事写下来，判断今晚要不要解决。写完就告诉大脑：已交接。</p>' +
+      '<div class="flex gap-2 mb-3"><input id="sm-input" placeholder="写下明天要做 / 担心的事" class="flex-1 bg-surface-container-low rounded-DEFAULT px-3 py-2 text-sm focus:outline-none"/><button id="sm-add" class="px-4 py-2 rounded-full bg-primary text-on-primary font-label-md text-label-md font-semibold transition-all">添加</button></div>' +
+      '<div id="sm-list" class="flex flex-col gap-2"></div>';
+    const list = document.getElementById('sm-list');
+    function add(){
+      const inp = document.getElementById('sm-input'); const v = inp.value.trim(); if(!v) return; inp.value = '';
+      const row = document.createElement('div'); row.className = 'flex items-center justify-between bg-surface-container-low rounded-DEFAULT px-3 py-2';
+      row.innerHTML = '<span class="font-body-md text-body-md text-on-surface text-sm">'+esc(v)+'</span><button class="text-xs px-3 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md transition-all">今晚解决</button>';
+      const btn = row.querySelector('button');
+      btn.onclick = () => {
+        if(btn.textContent.trim() === '今晚解决'){ btn.textContent = '明天处理'; btn.className = 'text-xs px-3 py-1 rounded-full bg-primary-container text-on-primary-container font-label-md text-label-md transition-all'; }
+        else { btn.textContent = '今晚解决'; btn.className = 'text-xs px-3 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md transition-all'; }
+      };
+      list.appendChild(row);
+    }
+    document.getElementById('sm-add').onclick = add;
+  }
+
+    const BREATH_PATTERNS = {
+    '478': { name:'4-7-8 舒缓', phases:[ {label:'吸气',dur:4},{label:'屏息',dur:7},{label:'呼气',dur:8} ] },
+    'box': { name:'4-4-4 箱式', phases:[ {label:'吸气',dur:4},{label:'屏息',dur:4},{label:'呼气',dur:4},{label:'屏息',dur:4} ] },
+    'resonance': { name:'共振 5.5s', phases:[ {label:'吸气',dur:5.5},{label:'呼气',dur:5.5} ] }
+  };
+  function startBreath(mount, key){
+    const pat = BREATH_PATTERNS[key];
+    mount.innerHTML =
+      '<div class="relative w-60 h-60 mx-auto my-4 flex items-center justify-center">' +
+        '<div class="absolute w-52 h-52 rounded-full bg-primary-container/20 aura-float"></div>' +
+        '<svg class="absolute w-full h-full -rotate-90" viewBox="0 0 200 200">' +
+          '<circle cx="100" cy="100" r="92" fill="none" stroke="#e0e3e6" stroke-width="6"/>' +
+          '<circle id="br-ring" cx="100" cy="100" r="92" fill="none" stroke="#1c6b50" stroke-width="6" stroke-linecap="round" stroke-dasharray="578" stroke-dashoffset="578"/>' +
+        '</svg>' +
+        '<div id="br-orb" class="w-36 h-36 rounded-full bg-primary flex items-center justify-center text-on-primary shadow-[0_8px_30px_rgba(28,107,80,0.35)]" style="transform:scale(0.6)">' +
+          '<div class="flex flex-col items-center"><span id="br-phase" class="font-headline-md text-body-lg text-on-primary font-semibold">准备</span><span id="br-count" class="font-label-md text-label-md text-on-primary/80 text-sm mt-0.5">—</span></div>' +
+        '</div>' +
+      '</div>' +
+      '<div class="flex items-center justify-center gap-3 mt-2">' +
+        '<button id="br-toggle" class="px-6 py-3 rounded-full bg-primary text-on-primary font-label-md text-body-md font-semibold shadow-sm hover:bg-primary/95 active:scale-[0.99] transition-all flex items-center gap-2"><span class="material-symbols-outlined text-[20px]" id="br-icon">play_arrow</span><span id="br-label">开始</span></button>' +
+        '<button id="br-reset" class="w-11 h-11 rounded-full bg-surface-container-low flex items-center justify-center text-on-surface-variant hover:bg-surface-container transition-colors" title="重置"><span class="material-symbols-outlined text-[20px]">restart_alt</span></button>' +
+      '</div>';
+    const CIRC = 578, TICK = 100;
+    let phaseIdx = 0, phaseElapsed = 0, running = false, cycles = 0, holdScale = 0.6, timer = null, last = null;
+    const ring = mount.querySelector('#br-ring'), orb = mount.querySelector('#br-orb'),
+          phaseLabel = mount.querySelector('#br-phase'), phaseCount = mount.querySelector('#br-count'),
+          toggleBtn = mount.querySelector('#br-toggle'), toggleIcon = mount.querySelector('#br-icon'), toggleLabel = mount.querySelector('#br-label');
+    function onEnterPhase(){
+      const len = pat.phases.length;
+      const prev = pat.phases[(phaseIdx-1+len)%len].label;
+      if(prev==='吸气') holdScale = 1.0; else if(prev==='呼气') holdScale = 0.6;
+    }
+    function render(){
+      const phase = pat.phases[phaseIdx];
+      const p = Math.min(phaseElapsed/phase.dur, 1);
+      ring.style.strokeDashoffset = CIRC*(1-p);
+      let scale;
+      if(phase.label==='吸气') scale = 0.6 + 0.4*p;
+      else if(phase.label==='呼气') scale = 1.0 - 0.4*p;
+      else scale = holdScale;
+      orb.style.transform = 'scale('+scale.toFixed(3)+')';
+      phaseLabel.textContent = phase.label;
+      phaseCount.textContent = Math.max(0, Math.ceil(phase.dur - phaseElapsed)) + 's';
+    }
+    function loop(){
+      const now = performance.now();
+      const dt = last ? (now-last)/1000 : 0.1; last = now;
+      phaseElapsed += dt;
+      const phase = pat.phases[phaseIdx];
+      if(phaseElapsed >= phase.dur){
+        phaseElapsed = 0; phaseIdx++;
+        if(phaseIdx >= pat.phases.length){ phaseIdx = 0; cycles++; if(cycles === 3 && window.JY && JY.recordPractice){JY.recordPractice('breathing');} }
+        onEnterPhase();
+      }
+      render();
+    }
+    function start(){ if(running) return; running = true; last = null; toggleIcon.textContent='pause'; toggleLabel.textContent='暂停'; timer = setInterval(loop, TICK); timers.push(timer); }
+    function pause(){ running = false; clearInterval(timer); toggleIcon.textContent='play_arrow'; toggleLabel.textContent='继续'; }
+    function reset(){ pause(); phaseIdx = 0; phaseElapsed = 0; cycles = 0; holdScale = 0.6; phaseLabel.textContent='准备'; phaseCount.textContent='—'; render(); }
+    toggleBtn.addEventListener('click', ()=>{ running ? pause() : start(); });
+    mount.querySelector('#br-reset').addEventListener('click', reset);
+    render();
+  }
+  function openBreathing(){
+    modalBody.innerHTML =
+      '<p class="font-body-md text-body-md text-on-surface-variant text-sm mb-3">选一个节奏，跟着光环的涨落呼吸：吸气时扩张，呼气时收束。呼气比吸气长，能帮身体慢下来。</p>' +
+      '<div id="br-pills" class="flex flex-wrap gap-2 mb-3"></div>' +
+      '<div id="br-mount"></div>';
+    const mount = document.getElementById('br-mount');
+    const pillsEl = document.getElementById('br-pills');
+    let first = true;
+    Object.keys(BREATH_PATTERNS).forEach((k) => {
+      const b = document.createElement('button');
+      b.className = 'px-4 py-2 rounded-full ' + (first ? 'bg-primary-container text-on-primary-container font-semibold ' : 'bg-surface-container-low text-on-surface-variant hover:bg-surface-container ') + 'font-label-md text-label-md transition-all';
+      b.textContent = BREATH_PATTERNS[k].name;
+      b.onclick = () => {
+        clearTimers();
+        pillsEl.querySelectorAll('button').forEach(x => { x.classList.remove('bg-primary-container','text-on-primary-container','font-semibold'); x.classList.add('bg-surface-container-low','text-on-surface-variant'); });
+        b.classList.add('bg-primary-container','text-on-primary-container','font-semibold'); b.classList.remove('bg-surface-container-low','text-on-surface-variant');
+        startBreath(mount, k);
+      };
+      pillsEl.appendChild(b);
+      first = false;
+    });
+    startBreath(mount, '478');
+  }
+const OPEN = { schulte:openSchulte, breathing:openBreathing, grounding:openGrounding, pmr:openPmr, stroop:openStroop, tiny:openTiny, rumination:openRumination, sleep:openSleep, sleepmind:openSleepmind };
+  function openTool(key){
+    const t = TOOLS.find(x => x.key === key);
+    if(t){ showModal(t.name, ''); const f = OPEN[key]; if(f) f(); }
+  }
+
+  // ---- render cards ----
+  const gridEl = document.getElementById('tool-grid');
+  TOOLS.forEach(t => {
+    const card = document.createElement('article');
+    card.id = t.key;
+    card.className = 'rounded-lg bg-surface-container-lowest p-card-inner-padding shadow-[0_12px_36px_rgba(28,107,80,0.05)] flex flex-col gap-3 hover:shadow-md transition-all scroll-mt-24';
+    card.setAttribute('data-tool','');
+    card.setAttribute('data-category', t.cat);
+    const action = t.href
+      ? '<a href="'+t.href+'" class="self-start mt-1 px-4 py-2 rounded-full bg-primary text-on-primary font-label-md text-label-md font-semibold hover:bg-primary/95 transition-all inline-flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">play_arrow</span>开始呼吸</a>'
+      : '<button class="start-btn self-start mt-1 px-4 py-2 rounded-full bg-primary-container/40 text-primary font-label-md text-label-md font-semibold hover:bg-primary-container transition-all inline-flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">play_arrow</span>开始练习</button>';
+    card.innerHTML =
+      '<div class="flex items-center justify-between"><span class="w-11 h-11 rounded-full '+iconBg[t.color.startsWith('primary')?'onPrimary':t.color.startsWith('secondary')?'onSecondary':'onTertiary']+' flex items-center justify-center '+iconFg[t.color.startsWith('primary')?'onPrimary':t.color.startsWith('secondary')?'onSecondary':'onTertiary']+'"><span class="material-symbols-outlined text-[24px]">'+t.icon+'</span></span><span class="font-label-md text-label-md text-xs text-on-surface-variant bg-surface-container-low px-2.5 py-1 rounded-full">'+catLabel[t.cat]+'</span></div>' +
+      '<h3 class="font-headline-md text-body-md text-on-surface font-semibold">'+t.name+'</h3>' +
+      '<p class="font-body-md text-body-md text-on-surface-variant text-sm flex-1">'+t.desc+'</p>' +
+      action;
+    if(!t.href){ card.querySelector('.start-btn').addEventListener('click', () => openTool(t.key)); }
+    gridEl.appendChild(card);
+  });
+
+  // filter
+  const pills = document.querySelectorAll('#filter-pills [data-filter]');
+  const cards = document.querySelectorAll('#tool-grid [data-tool]');
+  pills.forEach(p => p.addEventListener('click', () => {
+    pills.forEach(x => { x.classList.remove('bg-primary-container','text-on-primary-container','font-semibold'); x.classList.add('bg-surface-container-low','text-on-surface-variant'); });
+    p.classList.add('bg-primary-container','text-on-primary-container','font-semibold'); p.classList.remove('bg-surface-container-low','text-on-surface-variant');
+    const f = p.dataset.filter;
+    cards.forEach(c => { c.style.display = (f==='all' || c.dataset.category===f) ? '' : 'none'; });
+  }));
+
+  // deep link: toolbox.html#<key> 直接打开对应练习
+  if(location.hash){ const id = location.hash.slice(1); if(OPEN[id]){ openTool(id); } else { const el = document.getElementById(id); if(el) el.scrollIntoView({behavior:'smooth'}); } }
+</script>
+<script>
+  (function(){ const cur=location.pathname.split('/').pop()||'toolbox.html'; const map={'index.html':'overview','toolbox.html':'toolbox','breathing-space.html':'breathing-space','mood.html':'mood-and-insights','science.html':'science-basis','knowledge.html':'knowledge','assessment.html':'assessment','safety.html':'safety','privacy.html':'compliance-privacy','profile.html':'profile'}; const ap=map[cur]; document.querySelectorAll('aside nav a.nav-link').forEach(a=>{ if(a.dataset.path===ap){ a.classList.add('bg-primary-container','text-on-primary-container','font-semibold'); a.classList.remove('text-on-surface-variant'); a.setAttribute('aria-current','page'); } }); })();
+</script>
+</body>
+</html>

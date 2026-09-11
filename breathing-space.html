@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>静一下 · 呼吸训练</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link rel="stylesheet" href="assets/styles.css"/>
+<script src="assets/nav.js"></script>
+<link rel="icon" href="assets/logo.png"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={darkMode:"class",theme:{extend:{"colors":{"tertiary-fixed":"#e9e2d2","surface-tint":"#1c6b50","surface":"#f7f9fc","surface-variant":"#e0e3e6","background":"#f7f9fc","inverse-surface":"#2d3133","on-primary":"#ffffff","primary-container":"#7cc6a6","on-secondary":"#ffffff","secondary-fixed-dim":"#9ccdea","surface-bright":"#f7f9fc","on-secondary-container":"#33657e","on-primary-fixed":"#002115","surface-container-lowest":"#ffffff","inverse-primary":"#8bd6b5","primary-fixed-dim":"#8bd6b5","on-secondary-fixed":"#001e2c","error":"#ba1a1a","on-surface":"#191c1e","on-error":"#ffffff","on-primary-fixed-variant":"#00513a","surface-container-high":"#e6e8eb","tertiary-container":"#bdb7a8","primary-fixed":"#a7f2d0","primary":"#1c6b50","on-tertiary-fixed":"#1e1c12","outline-variant":"#bfc9c2","on-tertiary":"#ffffff","secondary-fixed":"#c2e8ff","tertiary-fixed-dim":"#ccc6b7","inverse-on-surface":"#eff1f4","on-tertiary-container":"#4c483d","surface-container-highest":"#e0e3e6","outline":"#6f7973","on-surface-variant":"#3f4944","on-secondary-fixed-variant":"#144c64","on-error-container":"#93000a","surface-container":"#eceef1","surface-container-low":"#f2f4f7","surface-dim":"#d8dadd","on-primary-container":"#00533b","error-container":"#ffdad6","secondary":"#32647d","tertiary":"#625e52","on-background":"#191c1e","secondary-container":"#b0e1fe","on-tertiary-fixed-variant":"#4a473b"},"borderRadius":{"DEFAULT":"1rem","lg":"2rem","xl":"3rem","full":"9999px"},"spacing":{"unit":"8px","section-gap":"40px","stack-gap":"16px","card-inner-padding":"20px","container-padding":"24px"},"fontFamily":{"body-lg":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"]},"fontSize":{"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"600"}],"label-md":["14px",{"lineHeight":"20px","letterSpacing":"0.02em","fontWeight":"500"}],"headline-lg":["30px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-lg-mobile":["26px",{"lineHeight":"34px","fontWeight":"700"}]}}}}</script>
+</head>
+<body class="bg-background font-body-md text-body-md text-on-surface antialiased">
+<aside class="jy-sidebar fixed left-0 top-0 h-screen w-72 bg-surface-container-lowest/80 backdrop-blur-xl z-50 flex flex-col justify-between p-container-padding shadow-[0_1px_12px_rgba(28,107,80,0.05)]">
+  <div class="flex flex-col gap-stack-gap">
+    <div class="flex items-center gap-stack-gap px-card-inner-padding py-2">
+      <img alt="静一下心 品牌标志" class="h-8 w-auto object-contain" src="assets/logo.png"/>
+      <div class="flex flex-col"><span class="font-headline-md text-body-lg text-primary tracking-tight font-semibold">静一下心</span><span class="font-label-md text-label-md text-on-surface-variant opacity-80 text-[12px] leading-tight">科学缓解焦虑</span></div>
+    </div>
+    <div class="h-[1px] w-full bg-surface-container-high/60 my-1"></div>
+    <nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-full">
+      <a class="nav-link flex items-center gap-3 px-card-inner-padding py-3 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="overview" href="index.html"><span class="material-symbols-outlined text-[20px]">cottage</span><span class="font-label-md text-label-md">首页</span></a>
+      <a class="nav-link flex items-center gap-3 px-card-inner-padding py-3 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="toolbox" href="toolbox.html"><span class="material-symbols-outlined text-[20px]">self_improvement</span><span class="font-label-md text-label-md">疗愈工具箱</span></a>
+      <a class="nav-link flex items-center gap-3 px-card-inner-padding py-3 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="mood-and-insights" href="mood.html"><span class="material-symbols-outlined text-[20px]">auto_graph</span><span class="font-label-md text-label-md">情绪日志</span></a>
+      <a class="nav-link flex items-center gap-3 px-card-inner-padding py-3 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="science-basis" href="science.html"><span class="material-symbols-outlined text-[20px]">psychology</span><span class="font-label-md text-label-md">科学依据</span></a>
+      <a class="nav-link flex items-center gap-3 px-card-inner-padding py-3 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="knowledge" href="knowledge.html"><span class="material-symbols-outlined text-[20px]">menu_book</span><span class="font-label-md text-label-md">焦虑知识库</span></a>
+      <a class="nav-link flex items-center gap-3 px-card-inner-padding py-3 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="assessment" href="assessment.html"><span class="material-symbols-outlined text-[20px]">quiz</span><span class="font-label-md text-label-md">权威自测</span></a>
+      <a class="nav-link flex items-center gap-3 px-card-inner-padding py-3 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="safety" href="safety.html"><span class="material-symbols-outlined text-[20px]">support_agent</span><span class="font-label-md text-label-md">安全与帮助</span></a>
+    </nav>
+  </div>
+  <div class="flex flex-col gap-stack-gap">
+    <div class="h-[1px] w-full bg-surface-container-high/60"></div>
+    <nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-full">
+      <a class="nav-link flex items-center gap-3 px-card-inner-padding py-2.5 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="compliance-privacy" href="privacy.html"><span class="material-symbols-outlined text-[20px]">verified_user</span><span class="font-label-md text-label-md">隐私与合规</span></a>
+      <a class="nav-link flex items-center gap-3 px-card-inner-padding py-2.5 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="profile" href="profile.html"><span class="material-symbols-outlined text-[20px]">account_circle</span><span class="font-label-md text-label-md">个人中心</span></a>
+    </nav>
+    <div class="px-card-inner-padding py-2 flex items-center justify-between text-on-surface-variant/60 font-label-md text-[12px]"><span>心境平伏 呼吸自然</span><span class="material-symbols-outlined text-[16px] text-primary">spa</span></div>
+  </div>
+</aside>
+<div class="jy-main-wrap pl-72">
+<header class="jy-header fixed top-0 left-72 right-0 h-16 bg-surface/75 backdrop-blur-xl shadow-[0_1px_8px_rgba(28,107,80,0.03)] z-40 flex items-center justify-between px-section-gap">
+  <div class="flex items-center gap-stack-gap">
+    <a href="index.html" onclick="if(window.JY&amp;&amp;JY.goBack){JY.goBack(event);}else{location.href='index.html';}" class="group flex items-center justify-center w-9 h-9 -ml-2 mr-1 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-primary transition-all" aria-label="返回上一级" title="返回"><span class="material-symbols-outlined text-[22px]">arrow_back</span></a>
+    <img alt="静一下心 品牌标志" class="h-8 w-auto object-contain" src="assets/logo.png"/>
+    <span class="font-headline-md text-body-md text-on-surface font-medium hidden sm:inline">静一下心</span>
+  </div>
+  <div class="flex items-center gap-4">
+    <div class="flex items-center bg-surface-container-low px-4 py-1.5 rounded-full text-on-surface-variant"><span class="material-symbols-outlined text-[18px] text-primary mr-2">spa</span><span class="font-label-md text-label-md text-on-surface-variant">身心处于平缓状态</span></div>
+  </div>
+</header>
+<main class="w-full pt-16 bg-surface min-h-screen px-section-gap py-container-padding">
+  <div class="flex flex-col w-full">
+    <div class="mb-section-gap">
+      <h1 class="font-headline-lg text-headline-lg text-on-surface">呼吸训练</h1>
+      <p class="font-body-md text-body-md text-on-surface-variant text-sm mt-1">跟随光环的涨落，把注意力交还给呼吸本身。</p>
+    </div>
+    <!-- Pattern pills -->
+    <div class="flex flex-wrap items-center gap-2 mb-section-gap" id="pattern-pills">
+      <button data-pattern="478" class="px-4 py-2 rounded-full bg-primary-container text-on-primary-container font-semibold font-label-md text-label-md transition-all" type="button">4-7-8 舒缓</button>
+      <button data-pattern="box" class="px-4 py-2 rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container font-label-md text-label-md transition-all" type="button">4-4-4 箱式</button>
+      <button data-pattern="resonance" class="px-4 py-2 rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container font-label-md text-label-md transition-all" type="button">共振 5.5s</button>
+    </div>
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-section-gap items-start">
+      <!-- Left: zen copy -->
+      <div class="lg:col-span-4 flex flex-col gap-4">
+        <div class="zen-photo rounded-lg h-40 flex items-center justify-center text-white/85"><span class="material-symbols-outlined text-[40px]">landscape</span></div>
+        <div class="rounded-lg bg-surface-container-lowest p-card-inner-padding shadow-[0_12px_36px_rgba(28,107,80,0.05)]">
+          <h3 class="font-headline-md text-body-md text-on-surface font-semibold mb-2 flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">auto_awesome</span>此刻禅意</h3>
+          <p class="font-body-md text-body-md text-on-surface-variant text-sm leading-relaxed">不必纠正呼吸的深浅，只需看着光环扩大、收束。呼吸会自己找到安稳的节奏。</p>
+        </div>
+      </div>
+      <!-- Center: mandala -->
+      <div class="lg:col-span-8 flex flex-col items-center">
+        <div class="relative w-72 h-72 flex items-center justify-center my-4">
+          <div class="absolute w-64 h-64 rounded-full bg-primary-container/20 aura-float"></div>
+          <svg class="absolute w-full h-full -rotate-90" viewBox="0 0 200 200">
+            <circle cx="100" cy="100" r="92" fill="none" stroke="#e0e3e6" stroke-width="6"/>
+            <circle id="progress-ring" cx="100" cy="100" r="92" fill="none" stroke="#1c6b50" stroke-width="6" stroke-linecap="round" stroke-dasharray="578" stroke-dashoffset="578"/>
+          </svg>
+          <div id="core-orb" class="w-44 h-44 rounded-full bg-primary flex items-center justify-center text-on-primary shadow-[0_8px_30px_rgba(28,107,80,0.35)]" style="transform:scale(0.6)">
+            <div class="flex flex-col items-center">
+              <span id="phase-label" class="font-headline-md text-body-lg text-on-primary font-semibold">准备</span>
+              <span id="phase-count" class="font-label-md text-label-md text-on-primary/80 text-sm mt-0.5">—</span>
+            </div>
+          </div>
+        </div>
+        <p class="font-body-md text-body-md text-on-surface-variant text-sm text-center max-w-sm mt-2">吸气时扩张，呼气时收束。若走神了，温柔地把注意力带回光环即可。</p>
+      </div>
+    </div>
+    <!-- Control dock -->
+    <div class="mt-section-gap rounded-lg bg-surface-container-lowest p-card-inner-padding shadow-[0_12px_36px_rgba(28,107,80,0.05)] flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-5">
+        <div class="flex flex-col items-center"><span class="font-label-md text-label-md text-on-surface-variant text-xs">本次时长</span><span id="dock-time" class="font-headline-md text-body-md text-on-surface font-bold tabular-nums">00:00</span></div>
+        <div class="flex flex-col items-center"><span class="font-label-md text-label-md text-on-surface-variant text-xs">已完成组数</span><span id="dock-cycles" class="font-headline-md text-body-md text-primary font-bold">0</span></div>
+      </div>
+      <div class="flex items-center gap-2">
+        <button id="btn-reset" class="w-11 h-11 rounded-full bg-surface-container-low flex items-center justify-center text-on-surface-variant hover:bg-surface-container transition-colors" title="重置"><span class="material-symbols-outlined text-[20px]">restart_alt</span></button>
+        <button id="btn-skip" class="w-11 h-11 rounded-full bg-surface-container-low flex items-center justify-center text-on-surface-variant hover:bg-surface-container transition-colors" title="跳过本阶段"><span class="material-symbols-outlined text-[20px]">skip_next</span></button>
+        <button id="btn-play" class="px-6 py-3 rounded-full bg-primary text-on-primary font-label-md text-body-md font-semibold shadow-sm hover:bg-primary/95 active:scale-[0.99] transition-all flex items-center gap-2"><span class="material-symbols-outlined text-[20px]" id="play-icon">play_arrow</span><span id="play-label">开始</span></button>
+      </div>
+    </div>
+  </div>
+</main>
+</div>
+<script>
+  (function breathingEngine(){
+    const patterns = {
+      '478': { phases:[ {label:'吸气',dur:4},{label:'屏息',dur:7},{label:'呼气',dur:8} ] },
+      'box': { phases:[ {label:'吸气',dur:4},{label:'屏息',dur:4},{label:'呼气',dur:4},{label:'屏息',dur:4} ] },
+      'resonance': { phases:[ {label:'吸气',dur:5.5},{label:'呼气',dur:5.5} ] }
+    };
+    const CIRC = 578, TICK = 100;
+    let current = '478', phaseIdx = 0, phaseElapsed = 0, running = false, cycles = 0, totalSec = 0, holdScale = 0.6, timer = null, last = null;
+    const ring = document.getElementById('progress-ring');
+    const orb = document.getElementById('core-orb');
+    const phaseLabel = document.getElementById('phase-label');
+    const phaseCount = document.getElementById('phase-count');
+    const dockTime = document.getElementById('dock-time');
+    const dockCycles = document.getElementById('dock-cycles');
+    const playBtn = document.getElementById('btn-play');
+    const playIcon = document.getElementById('play-icon');
+    const playLabel = document.getElementById('play-label');
+
+    function fmt(s){ return String(Math.floor(s/60)).padStart(2,'0')+':'+String(Math.floor(s%60)).padStart(2,'0'); }
+    function onEnterPhase(){
+      const len = patterns[current].phases.length;
+      const prev = patterns[current].phases[(phaseIdx-1+len)%len].label;
+      if(prev==='吸气') holdScale = 1.0; else if(prev==='呼气') holdScale = 0.6;
+    }
+    function render(){
+      const phase = patterns[current].phases[phaseIdx];
+      const p = Math.min(phaseElapsed/phase.dur, 1);
+      ring.style.strokeDashoffset = CIRC*(1-p);
+      let scale;
+      if(phase.label==='吸气') scale = 0.6 + 0.4*p;
+      else if(phase.label==='呼气') scale = 1.0 - 0.4*p;
+      else scale = holdScale;
+      orb.style.transform = 'scale('+scale.toFixed(3)+')';
+      phaseLabel.textContent = phase.label;
+      phaseCount.textContent = Math.max(0, Math.ceil(phase.dur - phaseElapsed)) + 's';
+      dockTime.textContent = fmt(totalSec);
+      dockCycles.textContent = cycles;
+    }
+    function loop(){
+      const now = performance.now();
+      const dt = last ? (now-last)/1000 : 0.1; last = now;
+      phaseElapsed += dt; totalSec += dt;
+      const phase = patterns[current].phases[phaseIdx];
+      if(phaseElapsed >= phase.dur){
+        phaseElapsed = 0; phaseIdx++;
+        if(phaseIdx >= patterns[current].phases.length){ phaseIdx = 0; cycles++; if(cycles === 3 && window.JY && JY.recordPractice){JY.recordPractice('breathing');} }
+        onEnterPhase();
+      }
+      render();
+    }
+    function start(){ if(running) return; running = true; last = null; playIcon.textContent='pause'; playLabel.textContent='暂停'; timer = setInterval(loop, TICK); }
+    function pause(){ running = false; clearInterval(timer); playIcon.textContent='play_arrow'; playLabel.textContent='继续'; }
+    function reset(){
+      pause(); phaseIdx = 0; phaseElapsed = 0; cycles = 0; totalSec = 0; holdScale = 0.6;
+      phaseLabel.textContent='准备'; phaseCount.textContent='—'; render();
+    }
+    playBtn.addEventListener('click', ()=>{ running ? pause() : start(); });
+    document.getElementById('btn-reset').addEventListener('click', reset);
+    document.getElementById('btn-skip').addEventListener('click', ()=>{ phaseIdx++; if(phaseIdx>=patterns[current].phases.length){phaseIdx=0;cycles++;} phaseElapsed=0; last=null; onEnterPhase(); render(); });
+    document.querySelectorAll('#pattern-pills [data-pattern]').forEach(b=>{
+      b.addEventListener('click', ()=>{
+        document.querySelectorAll('#pattern-pills [data-pattern]').forEach(x=>{x.classList.remove('bg-primary-container','text-on-primary-container','font-semibold');x.classList.add('bg-surface-container-low','text-on-surface-variant');});
+        b.classList.add('bg-primary-container','text-on-primary-container','font-semibold'); b.classList.remove('bg-surface-container-low','text-on-surface-variant');
+        current = b.dataset.pattern; reset();
+      });
+    });
+    render();
+  })();
+</script>
+<script>
+  (function(){ const cur=location.pathname.split('/').pop()||'breathing-space.html'; const map={'index.html':'overview','toolbox.html':'toolbox','breathing-space.html':'breathing-space','mood.html':'mood-and-insights','science.html':'science-basis','knowledge.html':'knowledge','assessment.html':'assessment','safety.html':'safety','privacy.html':'compliance-privacy','profile.html':'profile'}; const ap=map[cur]; document.querySelectorAll('aside nav a.nav-link').forEach(a=>{ if(a.dataset.path===ap){ a.classList.add('bg-primary-container','text-on-primary-container','font-semibold'); a.classList.remove('text-on-surface-variant'); a.setAttribute('aria-current','page'); } }); })();
+</script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+# local tmp helpers
+_*.py
+_*.js
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# WorkBuddy workspace memory (do NOT push)
+.workbuddy/
+
+# logs
+*.log

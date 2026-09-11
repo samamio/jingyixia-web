@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>静一下心 · 科学依据</title>
+<link rel="icon" href="assets/logo.png"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link rel="stylesheet" href="assets/styles.css"/>
+<script src="assets/nav.js"></script>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="assets/tailwind-setup.js"></script>
+<style>
+  .faq-body { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; }
+  .faq-chevron { transition: transform 0.3s ease; }
+  .faq-item.open .faq-chevron { transform: rotate(180deg); }
+</style>
+</head>
+<body class="bg-background font-body-md text-body-md text-on-surface antialiased">
+<aside class="jy-sidebar fixed left-0 top-0 h-screen w-72 bg-surface-container-lowest/80 backdrop-blur-xl z-50 flex flex-col justify-between p-container-padding shadow-[0_1px_12px_rgba(28,107,80,0.05)]">
+  <div class="flex flex-col gap-stack-gap">
+    <div class="flex items-center gap-stack-gap px-card-inner-padding py-2">
+      <img alt="静一下心 品牌标志" class="h-8 w-auto object-contain" src="assets/logo.png"/>
+      <div class="flex flex-col"><span class="font-headline-md text-body-lg text-primary tracking-tight font-semibold">静一下心</span><span class="font-label-md text-label-md text-on-surface-variant opacity-80 text-[12px] leading-tight">科学缓解焦虑</span></div>
+    </div>
+    <div class="h-[1px] w-full bg-surface-container-high/60 my-1"></div>
+    <nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-full">
+      <a class="nav-link flex items-center gap-3 px-card-inner-padding py-3 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="overview" href="index.html"><span class="material-symbols-outlined text-[20px]">cottage</span><span class="font-label-md text-label-md">首页</span></a>
+      <a class="nav-link flex items-center gap-3 px-card-inner-padding py-3 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="toolbox" href="toolbox.html"><span class="material-symbols-outlined text-[20px]">self_improvement</span><span class="font-label-md text-label-md">疗愈工具箱</span></a>
+      <a class="nav-link flex items-center gap-3 px-card-inner-padding py-3 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="mood-and-insights" href="mood.html"><span class="material-symbols-outlined text-[20px]">auto_graph</span><span class="font-label-md text-label-md">情绪日志</span></a>
+      <a class="nav-link flex items-center gap-3 px-card-inner-padding py-3 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="science-basis" href="science.html"><span class="material-symbols-outlined text-[20px]">psychology</span><span class="font-label-md text-label-md">科学依据</span></a>
+      <a class="nav-link flex items-center gap-3 px-card-inner-padding py-3 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="knowledge" href="knowledge.html"><span class="material-symbols-outlined text-[20px]">menu_book</span><span class="font-label-md text-label-md">焦虑知识库</span></a>
+      <a class="nav-link flex items-center gap-3 px-card-inner-padding py-3 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="assessment" href="assessment.html"><span class="material-symbols-outlined text-[20px]">quiz</span><span class="font-label-md text-label-md">权威自测</span></a>
+      <a class="nav-link flex items-center gap-3 px-card-inner-padding py-3 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="safety" href="safety.html"><span class="material-symbols-outlined text-[20px]">support_agent</span><span class="font-label-md text-label-md">安全与帮助</span></a>
+    </nav>
+  </div>
+  <div class="flex flex-col gap-stack-gap">
+    <div class="h-[1px] w-full bg-surface-container-high/60"></div>
+    <nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-full">
+      <a class="nav-link flex items-center gap-3 px-card-inner-padding py-2.5 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="compliance-privacy" href="privacy.html"><span class="material-symbols-outlined text-[20px]">verified_user</span><span class="font-label-md text-label-md">隐私与合规</span></a>
+      <a class="nav-link flex items-center gap-3 px-card-inner-padding py-2.5 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="profile" href="profile.html"><span class="material-symbols-outlined text-[20px]">account_circle</span><span class="font-label-md text-label-md">个人中心</span></a>
+    </nav>
+    <div class="px-card-inner-padding py-2 flex items-center justify-between text-on-surface-variant/60 font-label-md text-[12px]"><span>心境平伏 呼吸自然</span><span class="material-symbols-outlined text-[16px] text-primary">spa</span></div>
+  </div>
+</aside>
+<div class="jy-main-wrap pl-72">
+<header class="jy-header fixed top-0 left-72 right-0 h-16 bg-surface/75 backdrop-blur-xl shadow-[0_1px_8px_rgba(28,107,80,0.03)] z-40 flex items-center justify-between px-section-gap">
+  <div class="flex items-center gap-stack-gap">
+    <a href="index.html" onclick="if(window.JY&amp;&amp;JY.goBack){JY.goBack(event);}else{location.href='index.html';}" class="group flex items-center justify-center w-9 h-9 -ml-2 mr-1 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-primary transition-all" aria-label="返回上一级" title="返回"><span class="material-symbols-outlined text-[22px]">arrow_back</span></a>
+    <img alt="静一下心 品牌标志" class="h-8 w-auto object-contain" src="assets/logo.png"/>
+    <span class="font-headline-md text-body-md text-on-surface font-medium hidden sm:inline">静一下心</span>
+  </div>
+  <div class="flex items-center gap-4">
+    <div class="flex items-center bg-surface-container-low px-4 py-1.5 rounded-full text-on-surface-variant"><span class="material-symbols-outlined text-[18px] text-primary mr-2">spa</span><span class="font-label-md text-label-md text-on-surface-variant">身心处于平缓状态</span></div>
+  </div>
+</header>
+<main class="w-full pt-16 bg-surface min-h-screen px-section-gap py-container-padding">
+  <div class="flex flex-col w-full max-w-4xl mx-auto">
+    <div class="mb-section-gap">
+      <h1 class="font-headline-lg text-headline-lg text-on-surface">科学依据</h1>
+      <p class="font-body-md text-body-md text-on-surface-variant text-sm mt-1 max-w-2xl">静一下的每一项练习都建立在自主神经调节、注意力与感觉运动接地的研究之上。下面用最直白的方式说明它们为何有效。</p>
+    </div>
+
+    <!-- 概念卡 -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-section-gap">
+      <section class="rounded-lg bg-surface-container-lowest p-card-inner-padding shadow-[0_12px_36px_rgba(28,107,80,0.05)] flex flex-col gap-3">
+        <span class="w-12 h-12 rounded-full bg-primary-container/40 flex items-center justify-center text-primary"><span class="material-symbols-outlined text-[26px]">psychology</span></span>
+        <h3 class="font-headline-md text-body-md text-on-surface font-semibold">焦虑是什么</h3>
+        <p class="font-body-md text-body-md text-on-surface-variant text-sm flex-1">焦虑是身体面对压力时的正常警报：大脑判断有潜在威胁，就启动「战斗或逃跑」，让心跳、呼吸、注意力进入准备状态。短期出现是合理的，危险的是长期高警觉得不到恢复。</p>
+      </section>
+      <section class="rounded-lg bg-surface-container-lowest p-card-inner-padding shadow-[0_12px_36px_rgba(28,107,80,0.05)] flex flex-col gap-3">
+        <span class="w-12 h-12 rounded-full bg-secondary-container/50 flex items-center justify-center text-on-secondary-container"><span class="material-symbols-outlined text-[26px]">autorenew</span></span>
+        <h3 class="font-headline-md text-body-md text-on-surface font-semibold">为什么这些练习有效</h3>
+        <p class="font-body-md text-body-md text-on-surface-variant text-sm flex-1">延长呼气会强化迷走神经张力，把身体从「战斗或逃跑」的交感主导切换回「休息与修复」的副交感状态；练习调节的是身体的自主反应，而非仅靠暗示。</p>
+      </section>
+      <section class="rounded-lg bg-surface-container-lowest p-card-inner-padding shadow-[0_12px_36px_rgba(28,107,80,0.05)] flex flex-col gap-3">
+        <span class="w-12 h-12 rounded-full bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed"><span class="material-symbols-outlined text-[26px]">build</span></span>
+        <h3 class="font-headline-md text-body-md text-on-surface font-semibold">工具背后的原理</h3>
+        <p class="font-body-md text-body-md text-on-surface-variant text-sm flex-1">不同工具分别占用注意资源、调动五感、或激活行为——它们从「注意力、身体、行为」三个通道切入，帮你从焦虑循环里暂时抽身。</p>
+      </section>
+    </div>
+
+    <!-- 各工具科学原理 -->
+    <section class="mb-section-gap">
+      <h2 class="font-headline-md text-headline-md text-on-surface mb-4 flex items-center gap-2"><span class="material-symbols-outlined text-primary">science</span>各工具的科学原理</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div class="rounded-lg bg-surface-container-lowest p-card-inner-padding shadow-[0_12px_36px_rgba(28,107,80,0.05)]"><div class="flex items-center gap-3 mb-2"><span class="w-9 h-9 rounded-full bg-primary-container/50 flex items-center justify-center text-primary"><span class="material-symbols-outlined text-[20px]">air</span></span><span class="font-headline-md text-body-md text-on-surface font-semibold">呼吸训练</span></div><p class="font-body-md text-body-md text-on-surface-variant text-sm">延长呼气激活副交感神经，可测量地提升心率变异性（HRV）、降低静息心率。多项随机对照试验显示对焦虑症状有中到大效应量。</p></div>
+        <div class="rounded-lg bg-surface-container-lowest p-card-inner-padding shadow-[0_12px_36px_rgba(28,107,80,0.05)]"><div class="flex items-center gap-3 mb-2"><span class="w-9 h-9 rounded-full bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed"><span class="material-symbols-outlined text-[20px]">visibility</span></span><span class="font-headline-md text-body-md text-on-surface font-semibold">54321 练习</span></div><p class="font-body-md text-body-md text-on-surface-variant text-sm">借助五感信号把注意力拉回此时此地的身体，缓解解离与失控感，属注意锚定技术（Grounding）。</p></div>
+        <div class="rounded-lg bg-surface-container-lowest p-card-inner-padding shadow-[0_12px_36px_rgba(28,107,80,0.05)]"><div class="flex items-center gap-3 mb-2"><span class="w-9 h-9 rounded-full bg-secondary-container/50 flex items-center justify-center text-on-secondary-container"><span class="material-symbols-outlined text-[20px]">grid_view</span></span><span class="font-headline-md text-body-md text-on-surface font-semibold">动态舒尔特</span></div><p class="font-body-md text-body-md text-on-surface-variant text-sm">持续视觉搜索占用注意资源，让内部反刍循环暂时中断——是即时干预而非「训练注意力」。</p></div>
+        <div class="rounded-lg bg-surface-container-lowest p-card-inner-padding shadow-[0_12px_36px_rgba(28,107,80,0.05)]"><div class="flex items-center gap-3 mb-2"><span class="w-9 h-9 rounded-full bg-secondary-container/50 flex items-center justify-center text-on-secondary-container"><span class="material-symbols-outlined text-[20px]">fitness_center</span></span><span class="font-headline-md text-body-md text-on-surface font-semibold">身体放松 PMR</span></div><p class="font-body-md text-body-md text-on-surface-variant text-sm">紧张—放松的对照重建身体的安全信号，降低生理唤醒，是放松训练的经典方法。</p></div>
+        <div class="rounded-lg bg-surface-container-lowest p-card-inner-padding shadow-[0_12px_36px_rgba(28,107,80,0.05)]"><div class="flex items-center gap-3 mb-2"><span class="w-9 h-9 rounded-full bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed"><span class="material-symbols-outlined text-[20px]">style</span></span><span class="font-headline-md text-body-md text-on-surface font-semibold">Stroop 训练</span></div><p class="font-body-md text-body-md text-on-surface-variant text-sm">读出字色的颜色而非字义，锻炼抑制控制，削弱自动化的焦虑联想。</p></div>
+        <div class="rounded-lg bg-surface-container-lowest p-card-inner-padding shadow-[0_12px_36px_rgba(28,107,80,0.05)]"><div class="flex items-center gap-3 mb-2"><span class="w-9 h-9 rounded-full bg-secondary-container/50 flex items-center justify-center text-on-secondary-container"><span class="material-symbols-outlined text-[20px]">emoji_objects</span></span><span class="font-headline-md text-body-md text-on-surface font-semibold">微小行动</span></div><p class="font-body-md text-body-md text-on-surface-variant text-sm">基于行为激活：先做一个极小行动，用行动带动情绪，而不是等「有力气」再开始。</p></div>
+        <div class="rounded-lg bg-surface-container-lowest p-card-inner-padding shadow-[0_12px_36px_rgba(28,107,80,0.05)]"><div class="flex items-center gap-3 mb-2"><span class="w-9 h-9 rounded-full bg-primary-container/50 flex items-center justify-center text-primary"><span class="material-symbols-outlined text-[20px]">psychology</span></span><span class="font-headline-md text-body-md text-on-surface font-semibold">反刍打断</span></div><p class="font-body-md text-body-md text-on-surface-variant text-sm">把念头外化到纸上并判断「现在能否解决」，切断反复回放——对应认知行为疗法中对反刍的干预。</p></div>
+        <div class="rounded-lg bg-surface-container-lowest p-card-inner-padding shadow-[0_12px_36px_rgba(28,107,80,0.05)]"><div class="flex items-center gap-3 mb-2"><span class="w-9 h-9 rounded-full bg-primary-container/50 flex items-center justify-center text-primary"><span class="material-symbols-outlined text-[20px]">bedtime</span></span><span class="font-headline-md text-body-md text-on-surface font-semibold">睡前放松 / 思绪整理 / 夜间醒来</span></div><p class="font-body-md text-body-md text-on-surface-variant text-sm">基于失眠认知行为治疗（CBT-I）的刺激控制与放松训练，帮神经系统从警觉切回休息。</p></div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="rounded-lg bg-surface-container-lowest p-card-inner-padding shadow-[0_12px_36px_rgba(28,107,80,0.05)] mb-section-gap">
+      <div class="flex items-center gap-2 mb-stack-gap">
+        <span class="material-symbols-outlined text-primary text-[22px]">quiz</span>
+        <h3 class="font-headline-md text-headline-md text-on-surface">常见问题</h3>
+      </div>
+      <div class="flex flex-col gap-3" id="faq-list">
+        <div class="faq-item open rounded-DEFAULT bg-surface-container-low">
+          <button class="faq-toggle w-full flex items-center justify-between px-4 py-4 text-left">
+            <span class="font-headline-md text-body-md text-on-surface font-semibold">呼吸练习真的有用吗，还是只是心理安慰？</span>
+            <span class="material-symbols-outlined faq-chevron text-on-surface-variant">expand_more</span>
+          </button>
+          <div class="faq-body"><p class="font-body-md text-body-md text-on-surface-variant text-sm px-4 pb-4 leading-relaxed">延长呼气会经迷走神经引发可测量的生理变化，如心率变异性上升、心率下降，并非单纯的主观放松。它调节的是身体的自主反应，而非仅靠暗示。</p></div>
+        </div>
+        <div class="faq-item rounded-DEFAULT bg-surface-container-low">
+          <button class="faq-toggle w-full flex items-center justify-between px-4 py-4 text-left">
+            <span class="font-headline-md text-body-md text-on-surface font-semibold">每天要练多久才会见效？</span>
+            <span class="material-symbols-outlined faq-chevron text-on-surface-variant">expand_more</span>
+          </button>
+          <div class="faq-body"><p class="font-body-md text-body-md text-on-surface-variant text-sm px-4 pb-4 leading-relaxed">单次 3–5 分钟就可在当下缓解紧绷；若希望改善对焦虑的整体反应，建议每天固定 1–2 次、持续数周，让身体记住放松的节奏。</p></div>
+        </div>
+        <div class="faq-item rounded-DEFAULT bg-surface-container-low">
+          <button class="faq-toggle w-full flex items-center justify-between px-4 py-4 text-left">
+            <span class="font-headline-md text-body-md text-on-surface font-semibold">惊恐发作或极度难受时该怎么办？</span>
+            <span class="material-symbols-outlined faq-chevron text-on-surface-variant">expand_more</span>
+          </button>
+          <div class="faq-body"><p class="font-body-md text-body-md text-on-surface-variant text-sm px-4 pb-4 leading-relaxed">先让自己处于安全环境，用 54321 感官着陆法把注意力拉回当下，避免独自硬扛。若感到生命危险或持续加剧，请查看<a href="safety.html" class="text-primary font-semibold underline">安全与帮助</a>，联系你所在地区的危机干预渠道或就近就医。你值得被认真对待。</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 专业帮助 -->
+    <section class="rounded-lg bg-surface-container-lowest p-card-inner-padding shadow-[0_12px_36px_rgba(28,107,80,0.05)] mb-section-gap">
+      <div class="flex items-center gap-2 mb-3"><span class="material-symbols-outlined text-primary text-[22px]">support_agent</span><h3 class="font-headline-md text-headline-md text-on-surface">什么时候该寻求专业帮助</h3></div>
+      <ul class="flex flex-col gap-2 font-body-md text-body-md text-on-surface-variant text-sm list-disc pl-5">
+        <li>焦虑、低落或睡眠问题几乎每天出现，并持续超过两周。</li>
+        <li>明显影响工作、学习、社交或日常自理。</li>
+        <li>出现惊恐发作、强烈的回避行为，或反复有伤害自己的念头。</li>
+      </ul>
+      <div class="flex flex-col sm:flex-row gap-3 mt-4">
+        <a href="assessment.html" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-primary-container/50 text-primary font-label-md text-label-md font-semibold hover:bg-primary-container transition-all"><span class="material-symbols-outlined text-[18px]">quiz</span>做权威自测了解程度</a>
+        <a href="safety.html" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-surface-container-low text-on-surface-variant font-label-md text-label-md hover:bg-surface-container transition-all"><span class="material-symbols-outlined text-[18px]">support_agent</span>查看安全与帮助</a>
+      </div>
+    </section>
+
+    <!-- disclaimer -->
+    <div class="rounded-lg bg-surface-container-lowest p-card-inner-padding shadow-[0_12px_36px_rgba(28,107,80,0.05)] flex items-start gap-3">
+      <span class="material-symbols-outlined text-primary text-[22px] shrink-0">info</span>
+      <p class="font-body-md text-body-md text-on-surface-variant text-xs leading-relaxed">本页内容为科普性质，依据自主神经调节、注意力训练与失眠认知行为治疗等公开研究整理。静一下心为通用身心健康辅助工具，<strong class="text-on-surface">不提供医疗诊断、不替代专业治疗</strong>。若你正经历持续或加重的困扰，请寻求执业医师或专业机构帮助。</p>
+    </div>
+  </div>
+</main>
+</div>
+<script>
+  (function faq(){
+    const items = document.querySelectorAll('#faq-list .faq-item');
+    function setOpen(item, open){
+      const body = item.querySelector('.faq-body');
+      if(open){ item.classList.add('open'); body.style.maxHeight = body.scrollHeight + 'px'; }
+      else { item.classList.remove('open'); body.style.maxHeight = null; }
+    }
+    items.forEach(item => {
+      item.querySelector('.faq-toggle').addEventListener('click', () => { setOpen(item, !item.classList.contains('open')); });
+    });
+    const first = items[0];
+    if(first){ const b = first.querySelector('.faq-body'); first.classList.add('open'); b.style.maxHeight = b.scrollHeight + 'px'; }
+  })();
+  (function(){ const cur=location.pathname.split('/').pop()||'science.html'; const map={'index.html':'overview','toolbox.html':'toolbox','breathing-space.html':'breathing-space','mood.html':'mood-and-insights','science.html':'science-basis','knowledge.html':'knowledge','assessment.html':'assessment','safety.html':'safety','privacy.html':'compliance-privacy','profile.html':'profile'}; const ap=map[cur]; document.querySelectorAll('aside nav a.nav-link').forEach(a=>{ if(a.dataset.path===ap){ a.classList.add('bg-primary-container','text-on-primary-container','font-semibold'); a.classList.remove('text-on-surface-variant'); a.setAttribute('aria-current','page'); } }); })();
+</script>
+</body>
+</html>
