@@ -5,6 +5,17 @@
   var PRACTICE_KEY = 'jy_practice_log';
   var MAX = 2000;
 
+  // 生产域名强制走 HTTPS：若因旧链接 / 缓存 / 代理吞掉 301 而以 http:// 打开，立即升级协议
+  (function forceHttps() {
+    try {
+      var h = location.hostname || '';
+      var ours = /(^|\.)yxylws\.com$/i.test(h) || /(^|\.)github\.io$/i.test(h);
+      if (ours && location.protocol === 'http:') {
+        location.replace('https://' + location.host + location.pathname + location.search + location.hash);
+      }
+    } catch (e) {}
+  })();
+
   function load(key, fallback) {
     try {
       var v = JSON.parse(localStorage.getItem(key));
